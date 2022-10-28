@@ -36,5 +36,12 @@ namespace AhorcadoCliente.Interfaces
             inicioDeSesion.Show();
             this.Close();
         }
+
+        private void btnJugar_Click(object sender, RoutedEventArgs e)
+        {
+            PantallaJugar pantallaJugar = new PantallaJugar();
+            pantallaJugar.Show();
+            this.Close();
+        }
     }
 }

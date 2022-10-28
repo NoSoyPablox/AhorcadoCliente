@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:AhorcadoCliente.Interfaces"
         xmlns:p ="clr-namespace:AhorcadoCliente.Properties"
         mc:Ignorable="d"
-        Title="PantallaJugar" Height="450" Width="800">
+        Title="PantallaJugar" Height="450" Width="800"
+        ResizeMode="NoResize"
+        >
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

@@ -20,7 +20,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="btnInformacion" Content="{x:Static p:Resources.Information }" HorizontalAlignment="Left" Margin="37,84,0,0" VerticalAlignment="Top" Width="116" Height="25"/>
-        <Button x:Name="btnJugar" Content="{x:Static p:Resources.Play}" HorizontalAlignment="Left" Margin="339,268,0,0" VerticalAlignment="Top" Width="144" Height="38"/>
+        <Button x:Name="btnJugar" Content="{x:Static p:Resources.Play}" HorizontalAlignment="Left" Margin="339,268,0,0" VerticalAlignment="Top" Width="144" Height="38" Click="btnJugar_Click"/>
         <Button x:Name="btnSalir" Content="{x:Static p:Resources.Exit}" HorizontalAlignment="Left" Margin="368,341,0,0" VerticalAlignment="Top" Width="88" Height="28" Click="btnSalir_Click"/>
         <Button x:Name="btnCerrarSesion" Content="{x:Static p:Resources.LogOut}" HorizontalAlignment="Left" Margin="652,319,0,0" VerticalAlignment="Top" Width="100" Click="btnCerrarSesion_Click"/>
 
