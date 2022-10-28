@@ -1,0 +1,28 @@
+﻿<Window x:Class="AhorcadoCliente.Interfaces.PantallaPrincipal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AhorcadoCliente.Interfaces"
+      mc:Ignorable="d" 
+      xmlns:p ="clr-namespace:AhorcadoCliente.Properties"
+      ResizeMode="NoResize"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PantallaPrincipal"
+      WindowStartupLocation="CenterScreen"  
+      >
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF2D204D" Offset="0"/>
+                <GradientStop Color="#FF473870" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="btnInformacion" Content="{x:Static p:Resources.Information }" HorizontalAlignment="Left" Margin="37,84,0,0" VerticalAlignment="Top" Width="116" Height="25"/>
+        <Button x:Name="btnJugar" Content="{x:Static p:Resources.Play}" HorizontalAlignment="Left" Margin="339,268,0,0" VerticalAlignment="Top" Width="144" Height="38"/>
+        <Button x:Name="btnSalir" Content="{x:Static p:Resources.Exit}" HorizontalAlignment="Left" Margin="368,341,0,0" VerticalAlignment="Top" Width="88" Height="28" Click="btnSalir_Click"/>
+        <Button x:Name="btnCerrarSesion" Content="{x:Static p:Resources.LogOut}" HorizontalAlignment="Left" Margin="652,319,0,0" VerticalAlignment="Top" Width="100" Click="btnCerrarSesion_Click"/>
+
+    </Grid>
+</Window>

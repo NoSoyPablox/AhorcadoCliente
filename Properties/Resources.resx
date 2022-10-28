@@ -120,8 +120,14 @@
   <data name="Age" xml:space="preserve">
     <value>Edad</value>
   </data>
+  <data name="Back" xml:space="preserve">
+    <value>Volver</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
+  </data>
+  <data name="CreateRoom" xml:space="preserve">
+    <value>Crear sala</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Correo Electronico</value>
@@ -134,6 +140,9 @@
   </data>
   <data name="Information" xml:space="preserve">
     <value>Información</value>
+  </data>
+  <data name="JoinRoom" xml:space="preserve">
+    <value>Unirme a sala</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Idioma</value>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AhorcadoCliente.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,15 +19,22 @@ namespace AhorcadoCliente
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class InicioDeSesion : Window
     {
-        public MainWindow()
+        public InicioDeSesion()
         {
             InitializeComponent();
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void btnIniciarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.Show();
             this.Close();
         }
     }

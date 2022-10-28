@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="InicioDeSesion.xaml">
+    <Page Include="Interfaces\InicioDeSesion.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,12 +63,26 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="InicioDeSesion.xaml.cs">
+    <Compile Include="Interfaces\InicioDeSesion.xaml.cs">
       <DependentUpon>InicioDeSesion.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Interfaces\PantallaJugar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\PantallaPrincipal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\PantallaJugar.xaml.cs">
+      <DependentUpon>PantallaJugar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\PantallaPrincipal.xaml.cs">
+      <DependentUpon>PantallaPrincipal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,5 +108,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

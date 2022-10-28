@@ -70,11 +70,29 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Volver.
+        /// </summary>
+        public static string Back {
+            get {
+                return ResourceManager.GetString("Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cancelar.
         /// </summary>
         public static string Cancel {
             get {
                 return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crear sala.
+        /// </summary>
+        public static string CreateRoom {
+            get {
+                return ResourceManager.GetString("CreateRoom", resourceCulture);
             }
         }
         
@@ -111,6 +129,15 @@ namespace AhorcadoCliente.Properties {
         public static string Information {
             get {
                 return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Unirme a sala.
+        /// </summary>
+        public static string JoinRoom {
+            get {
+                return ResourceManager.GetString("JoinRoom", resourceCulture);
             }
         }
         
