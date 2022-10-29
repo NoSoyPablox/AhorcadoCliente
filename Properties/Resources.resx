@@ -138,6 +138,9 @@
   <data name="Exit" xml:space="preserve">
     <value>Salir</value>
   </data>
+  <data name="GameLanguage" xml:space="preserve">
+    <value>Idioma de la partida:</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Información</value>
   </data>
@@ -177,7 +180,13 @@
   <data name="Spanish" xml:space="preserve">
     <value>Español</value>
   </data>
+  <data name="StartGame" xml:space="preserve">
+    <value>Iniciar partida</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Usuario</value>
+  </data>
+  <data name="WaitingGameHost" xml:space="preserve">
+    <value>Esperando al anfitrión...</value>
   </data>
 </root>

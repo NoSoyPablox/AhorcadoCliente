@@ -18,7 +18,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <TextBox x:Name="tbCodigoPartida" HorizontalAlignment="Left" Height="50" Margin="56,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="32" FontWeight="Bold" TextDecorations="{x:Null}"/>
-        <Button x:Name="btnUnirse" Content="{x:Static p:Resources.JoinRoom}" HorizontalAlignment="Left" Margin="356,161,0,0" VerticalAlignment="Top" Width="102" Height="30"/>
+        <Button x:Name="btnUnirse" Content="{x:Static p:Resources.JoinRoom}" HorizontalAlignment="Left" Margin="356,161,0,0" VerticalAlignment="Top" Width="102" Height="30" Click="btnUnirse_Click"/>
         <Button x:Name="btnVolver" Content="{x:Static p:Resources.Back}" HorizontalAlignment="Left" Margin="486,161,0,0" VerticalAlignment="Top" Width="102" Height="30" Click="btnVolver_Click"/>
         <Label x:Name="lbInstruccionUnirse" Content="{x:Static p:Resources.Join_Window_Message}" HorizontalAlignment="Left" Margin="56,44,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
 

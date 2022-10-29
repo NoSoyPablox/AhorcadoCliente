@@ -79,6 +79,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Interfaces\SalaDeEsperaAnfitrion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\SalaDeEsperaInvitado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\PantallaJugar.xaml.cs">
@@ -89,6 +97,12 @@
     </Compile>
     <Compile Include="Interfaces\PantallaUnirsePartida.xaml.cs">
       <DependentUpon>PantallaUnirsePartida.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\SalaDeEsperaAnfitrion.xaml.cs">
+      <DependentUpon>SalaDeEsperaAnfitrion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\SalaDeEsperaInvitado.xaml.cs">
+      <DependentUpon>SalaDeEsperaInvitado.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

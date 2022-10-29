@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace AhorcadoCliente.Interfaces
 {
     /// <summary>
-    /// Lógica de interacción para PantallaUnirsePartida.xaml
+    /// Lógica de interacción para SalaDeEsperaAnfitrion.xaml
     /// </summary>
-    public partial class PantallaUnirsePartida : Window
+    public partial class SalaDeEsperaAnfitrion : Window
     {
-        public PantallaUnirsePartida()
+        public SalaDeEsperaAnfitrion()
         {
             InitializeComponent();
         }
@@ -28,13 +28,6 @@ namespace AhorcadoCliente.Interfaces
         {
             PantallaJugar pantallaJugar = new PantallaJugar();
             pantallaJugar.Show();
-            this.Close();
-        }
-
-        private void btnUnirse_Click(object sender, RoutedEventArgs e)
-        {
-            SalaDeEsperaInvitado salaDeEsperaInvitado = new SalaDeEsperaInvitado();
-            salaDeEsperaInvitado.Show();
             this.Close();
         }
     }

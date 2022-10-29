@@ -37,5 +37,12 @@ namespace AhorcadoCliente.Interfaces
             pantallaUnirsePartida.Show();
             this.Close();
         }
+
+        private void btnJugar_Click(object sender, RoutedEventArgs e)
+        {
+            SalaDeEsperaAnfitrion salaDeEsperaAnfitrion = new SalaDeEsperaAnfitrion();
+            salaDeEsperaAnfitrion.Show();
+            this.Close();
+        }
     }
 }

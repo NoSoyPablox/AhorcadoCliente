@@ -124,6 +124,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Idioma de la partida:.
+        /// </summary>
+        public static string GameLanguage {
+            get {
+                return ResourceManager.GetString("GameLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Información.
         /// </summary>
         public static string Information {
@@ -241,11 +250,29 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Iniciar partida.
+        /// </summary>
+        public static string StartGame {
+            get {
+                return ResourceManager.GetString("StartGame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Usuario.
         /// </summary>
         public static string User {
             get {
                 return ResourceManager.GetString("User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Esperando al anfitrión....
+        /// </summary>
+        public static string WaitingGameHost {
+            get {
+                return ResourceManager.GetString("WaitingGameHost", resourceCulture);
             }
         }
     }
