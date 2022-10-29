@@ -133,6 +133,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Adivinar palabra.
+        /// </summary>
+        public static string GuessWord {
+            get {
+                return ResourceManager.GetString("GuessWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Información.
         /// </summary>
         public static string Information {
@@ -165,6 +174,15 @@ namespace AhorcadoCliente.Properties {
         public static string Language {
             get {
                 return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Abandonar.
+        /// </summary>
+        public static string LeaveGame {
+            get {
+                return ResourceManager.GetString("LeaveGame", resourceCulture);
             }
         }
         

@@ -79,6 +79,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Interfaces\PartidaAdivinador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Interfaces\SalaDeEsperaAnfitrion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -97,6 +101,9 @@
     </Compile>
     <Compile Include="Interfaces\PantallaUnirsePartida.xaml.cs">
       <DependentUpon>PantallaUnirsePartida.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\PartidaAdivinador.xaml.cs">
+      <DependentUpon>PartidaAdivinador.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\SalaDeEsperaAnfitrion.xaml.cs">
       <DependentUpon>SalaDeEsperaAnfitrion.xaml</DependentUpon>

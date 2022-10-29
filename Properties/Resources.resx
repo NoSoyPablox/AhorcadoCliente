@@ -141,6 +141,9 @@
   <data name="GameLanguage" xml:space="preserve">
     <value>Idioma de la partida:</value>
   </data>
+  <data name="GuessWord" xml:space="preserve">
+    <value>Adivinar palabra</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Información</value>
   </data>
@@ -152,6 +155,9 @@
   </data>
   <data name="Language" xml:space="preserve">
     <value>Idioma</value>
+  </data>
+  <data name="LeaveGame" xml:space="preserve">
+    <value>Abandonar</value>
   </data>
   <data name="Login_Button" xml:space="preserve">
     <value>Iniciar sesión</value>
