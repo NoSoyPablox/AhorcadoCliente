@@ -13,5 +13,23 @@ namespace AhorcadoCliente
     /// </summary>
     public partial class App : Application
     {
+        App()
+        {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ES-mx");
+            
+        }
+
+        public static string idioma = "Español";
+
+        public static void IdiomaEspañol()
+        {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ES-mx");
+            idioma = "Español";
+        }
+        public static void IdiomaIngles()
+        {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("EN-us");
+            idioma = "English";
+        }
     }
 }

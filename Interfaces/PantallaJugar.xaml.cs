@@ -22,6 +22,7 @@ namespace AhorcadoCliente.Interfaces
         public PantallaJugar()
         {
             InitializeComponent();
+            cbIdioma.Text = App.idioma;
         }
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
@@ -43,6 +44,25 @@ namespace AhorcadoCliente.Interfaces
             SalaDeEsperaAnfitrion salaDeEsperaAnfitrion = new SalaDeEsperaAnfitrion();
             salaDeEsperaAnfitrion.Show();
             this.Close();
+        }
+        private void cbIdioma_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cbIdioma.SelectedItem == cbiEspañol && App.idioma != "Español")
+            {
+                App.IdiomaEspañol();
+                PantallaJugar pantallaJugar = new PantallaJugar();
+                pantallaJugar.cbIdioma.Text = "Español";
+                pantallaJugar.Show();
+                this.Close();
+            }
+            if (cbIdioma.SelectedItem == cbiIngles && App.idioma != "English")
+            {
+                App.IdiomaIngles();
+                PantallaJugar pantallaJugar = new PantallaJugar();
+                pantallaJugar.cbIdioma.Text = "Español";
+                pantallaJugar.Show();
+                this.Close();
+            }
         }
     }
 }

@@ -21,8 +21,8 @@
         <Button x:Name="btnJugar" Content="{x:Static p:Resources.Play}" HorizontalAlignment="Left" Margin="300,245,0,0" VerticalAlignment="Top" Width="183" Height="59" Click="btnJugar_Click"/>
         <Button x:Name="btnInformacion" Content="{x:Static p:Resources.Information}" HorizontalAlignment="Left" Margin="32,71,0,0" VerticalAlignment="Top" Width="105" Height="24"/>
         <Button x:Name="btnCerrarSesion" Content="{x:Static p:Resources.LogOut}" HorizontalAlignment="Left" Margin="644,323,0,0" VerticalAlignment="Top" Width="112" Height="28" Click="btnCerrarSesion_Click"/>
-        <Label x:Name="lbIdioma" Content="{x:Static p:Resources.Language}" HorizontalAlignment="Left" Margin="564,49,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
-        <ComboBox HorizontalAlignment="Left" Margin="664,56,0,0" VerticalAlignment="Top" Width="108">
+        <Label x:Name="lbIdioma" Content="{x:Static p:Resources.Language}" HorizontalAlignment="Left" Margin="567,35,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <ComboBox x:Name="cbIdioma" HorizontalAlignment="Left" Margin="654,41,0,0" VerticalAlignment="Top" Width="108" SelectionChanged="cbIdioma_SelectionChanged">
             <ComboBoxItem x:Name="cbiEspañol" Content="{x:Static p:Resources.Spanish}"/>
             <ComboBoxItem x:Name="cbiIngles" Content="{x:Static p:Resources.English}"/>
         </ComboBox>

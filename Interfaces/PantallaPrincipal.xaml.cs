@@ -22,6 +22,7 @@ namespace AhorcadoCliente.Interfaces
         public PantallaPrincipal()
         {
             InitializeComponent();
+            cbIdioma.Text = App.idioma;
         }
 
         private void btnCerrarSesion_Click(object sender, RoutedEventArgs e)
@@ -41,6 +42,26 @@ namespace AhorcadoCliente.Interfaces
         private void btnSalir_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void cbIdioma_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cbIdioma.SelectedItem == cbiEspañol && App.idioma != "Español")
+            {
+                App.IdiomaEspañol();
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                pantallaPrincipal.cbIdioma.Text = "Español";
+                pantallaPrincipal.Show();
+                this.Close();
+            }
+            if (cbIdioma.SelectedItem == cbiIngles && App.idioma != "English")
+            {
+                App.IdiomaIngles();
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                pantallaPrincipal.cbIdioma.Text = "English";
+                pantallaPrincipal.Show();
+                this.Close();
+            }
         }
     }
 }
