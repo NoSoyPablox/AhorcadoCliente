@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:AhorcadoCliente.Interfaces"
         xmlns:p ="clr-namespace:AhorcadoCliente.Properties"
         mc:Ignorable="d"
-        Title="PantallaJugar" Height="450" Width="800">
+        Title="PantallaJugar" Height="450" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        >
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -15,10 +18,13 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="btnInformacion" Content="{x:Static p:Resources.Information}" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="118" Height="23"/>
-        <Button x:Name="btnJugar" Content="{x:Static p:Resources.CreateRoom}" HorizontalAlignment="Left" Margin="160,191,0,0" VerticalAlignment="Top" Width="175" Height="43"/>
-        <Button x:Name="btnUnirse" Content="{x:Static p:Resources.JoinRoom}" HorizontalAlignment="Left" Margin="426,191,0,0" VerticalAlignment="Top" Width="178" Height="43"/>
-        <Button x:Name="btnVolver" Content="{x:Static p:Resources.Back}" HorizontalAlignment="Left" Margin="331,268,0,0" VerticalAlignment="Top" Width="100" Height="31" Click="btnVolver_Click"/>
+        <Button x:Name="btnJugar" Content="{x:Static p:Resources.CreateRoom}" HorizontalAlignment="Left" Margin="173,196,0,0" VerticalAlignment="Top" Width="175" Height="43" Click="btnJugar_Click"/>
+        <Button x:Name="btnUnirse" Content="{x:Static p:Resources.JoinRoom}" HorizontalAlignment="Left" Margin="439,196,0,0" VerticalAlignment="Top" Width="178" Height="43" Click="btnUnirse_Click"/>
+        <Button x:Name="btnVolver" Content="{x:Static p:Resources.Back}" HorizontalAlignment="Left" Margin="344,273,0,0" VerticalAlignment="Top" Width="100" Height="31" Click="btnVolver_Click"/>
         <Label x:Name="lbIdioma" Content="{x:Static p:Resources.Language}" HorizontalAlignment="Left" Margin="548,56,0,0" VerticalAlignment="Top" Foreground="White" FontSize="15"/>
-        <ComboBox HorizontalAlignment="Left" Margin="646,60,0,0" VerticalAlignment="Top" Width="102"/>
+        <ComboBox HorizontalAlignment="Left" Margin="646,60,0,0" VerticalAlignment="Top" Width="102">
+            <ComboBoxItem x:Name="cbiEspañol" Content="{x:Static p:Resources.Spanish}"/>
+            <ComboBoxItem x:Name="cbiIngles" Content="{x:Static p:Resources.English}"/>
+        </ComboBox>
     </Grid>
 </Window>

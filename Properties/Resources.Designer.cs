@@ -124,11 +124,38 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Idioma de la partida:.
+        /// </summary>
+        public static string GameLanguage {
+            get {
+                return ResourceManager.GetString("GameLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Adivinar palabra.
+        /// </summary>
+        public static string GuessWord {
+            get {
+                return ResourceManager.GetString("GuessWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Información.
         /// </summary>
         public static string Information {
             get {
                 return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Introduce el código de la partida.
+        /// </summary>
+        public static string Join_Window_Message {
+            get {
+                return ResourceManager.GetString("Join_Window_Message", resourceCulture);
             }
         }
         
@@ -147,6 +174,15 @@ namespace AhorcadoCliente.Properties {
         public static string Language {
             get {
                 return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Abandonar.
+        /// </summary>
+        public static string LeaveGame {
+            get {
+                return ResourceManager.GetString("LeaveGame", resourceCulture);
             }
         }
         
@@ -232,11 +268,29 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Iniciar partida.
+        /// </summary>
+        public static string StartGame {
+            get {
+                return ResourceManager.GetString("StartGame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Usuario.
         /// </summary>
         public static string User {
             get {
                 return ResourceManager.GetString("User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Esperando al anfitrión....
+        /// </summary>
+        public static string WaitingGameHost {
+            get {
+                return ResourceManager.GetString("WaitingGameHost", resourceCulture);
             }
         }
     }

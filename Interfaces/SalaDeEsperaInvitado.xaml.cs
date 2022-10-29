@@ -15,31 +15,19 @@ using System.Windows.Shapes;
 namespace AhorcadoCliente.Interfaces
 {
     /// <summary>
-    /// Lógica de interacción para PantallaPrincipal.xaml
+    /// Lógica de interacción para SalaDeEsperaInvitado.xaml
     /// </summary>
-    public partial class PantallaPrincipal : Window
+    public partial class SalaDeEsperaInvitado : Window
     {
-        public PantallaPrincipal()
+        public SalaDeEsperaInvitado()
         {
             InitializeComponent();
         }
 
-        private void btnCerrarSesion_Click(object sender, RoutedEventArgs e)
-        {
-            InicioDeSesion inicioDeSesion = new InicioDeSesion();
-            inicioDeSesion.Show();
-            this.Close();
-        }
-
-        private void btnJugar_Click(object sender, RoutedEventArgs e)
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
             PantallaJugar pantallaJugar = new PantallaJugar();
             pantallaJugar.Show();
-            this.Close();
-        }
-
-        private void btnSalir_Click(object sender, RoutedEventArgs e)
-        {
             this.Close();
         }
     }
