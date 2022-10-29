@@ -45,7 +45,6 @@ namespace AhorcadoCliente.Interfaces
             salaDeEsperaAnfitrion.Show();
             this.Close();
         }
-
         private void cbIdioma_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (cbIdioma.SelectedItem == cbiEspañol && App.idioma != "Español")
