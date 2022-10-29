@@ -144,6 +144,9 @@
   <data name="JoinRoom" xml:space="preserve">
     <value>Unirme a sala</value>
   </data>
+  <data name="Join_Window_Message" xml:space="preserve">
+    <value>Introduce el código de la partida</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Idioma</value>
   </data>

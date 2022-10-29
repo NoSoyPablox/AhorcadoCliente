@@ -15,26 +15,17 @@ using System.Windows.Shapes;
 namespace AhorcadoCliente.Interfaces
 {
     /// <summary>
-    /// Lógica de interacción para PantallaJugar.xaml
+    /// Lógica de interacción para PantallaUnirsePartida.xaml
     /// </summary>
-    public partial class PantallaJugar : Window
+    public partial class PantallaUnirsePartida : Window
     {
-        public PantallaJugar()
+        public PantallaUnirsePartida()
         {
             InitializeComponent();
         }
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
-            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-            pantallaPrincipal.Show();
-            this.Close();
-        }
-
-        private void btnUnirse_Click(object sender, RoutedEventArgs e)
-        {
-            PantallaUnirsePartida pantallaUnirsePartida = new PantallaUnirsePartida();
-            pantallaUnirsePartida.Show();
             this.Close();
         }
     }

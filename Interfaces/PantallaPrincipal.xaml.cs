@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace AhorcadoCliente.Interfaces
@@ -25,11 +24,6 @@ namespace AhorcadoCliente.Interfaces
             InitializeComponent();
         }
 
-        private void btnSalir_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnCerrarSesion_Click(object sender, RoutedEventArgs e)
         {
             InicioDeSesion inicioDeSesion = new InicioDeSesion();
@@ -41,6 +35,11 @@ namespace AhorcadoCliente.Interfaces
         {
             PantallaJugar pantallaJugar = new PantallaJugar();
             pantallaJugar.Show();
+            this.Close();
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
             this.Close();
         }
     }

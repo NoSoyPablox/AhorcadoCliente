@@ -133,6 +133,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Introduce el código de la partida.
+        /// </summary>
+        public static string Join_Window_Message {
+            get {
+                return ResourceManager.GetString("Join_Window_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Unirme a sala.
         /// </summary>
         public static string JoinRoom {
