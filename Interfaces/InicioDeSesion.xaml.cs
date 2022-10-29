@@ -24,6 +24,7 @@ namespace AhorcadoCliente
         public InicioDeSesion()
         {
             InitializeComponent();
+            cbIdioma.Text = App.idioma;
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
@@ -36,6 +37,29 @@ namespace AhorcadoCliente
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.Show();
             this.Close();
+        }
+
+        private void cbIdioma_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            String usuarioIntroducido = tbUsuario.Text;
+            if (cbIdioma.SelectedItem == cbiEspañol && App.idioma != "Español")
+            {
+                App.IdiomaEspañol();
+                InicioDeSesion inicioDeSesion = new InicioDeSesion();
+                inicioDeSesion.tbUsuario.Text = usuarioIntroducido;
+                inicioDeSesion.cbIdioma.Text = "Español";
+                inicioDeSesion.Show();
+                this.Close();
+            }
+            if (cbIdioma.SelectedItem == cbiIngles && App.idioma != "English")
+            {
+                App.IdiomaIngles();
+                InicioDeSesion inicioDeSesion = new InicioDeSesion();
+                inicioDeSesion.tbUsuario.Text = usuarioIntroducido;
+                inicioDeSesion.cbIdioma.Text = "English";
+                inicioDeSesion.Show();
+                this.Close();
+            }
         }
     }
 }
