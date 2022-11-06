@@ -61,5 +61,12 @@ namespace AhorcadoCliente
                 this.Close();
             }
         }
+
+        private void btnRegistrarme_Click(object sender, RoutedEventArgs e)
+        {
+            PantallaRegistro pantallaRegistro = new PantallaRegistro();
+            pantallaRegistro.Show();
+            this.Close();
+        }
     }
 }
