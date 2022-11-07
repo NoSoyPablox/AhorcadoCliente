@@ -19,11 +19,16 @@
         </Grid.Background>
         <Button x:Name="btnVolver" Content="{x:Static p:Resources.Back}" HorizontalAlignment="Left" Margin="553,266,0,0" VerticalAlignment="Top" Width="95" Height="35" Click="btnVolver_Click"/>
         <Label x:Name="lbIdiomaPartida" Content="{x:Static p:Resources.GameLanguage}" HorizontalAlignment="Left" Margin="444,29,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <ListBox x:Name="lbx" HorizontalAlignment="Left" Height="190" Margin="28,29,0,0" VerticalAlignment="Top" Width="177" Background="{x:Null}" Foreground="White">
+        <ListBox x:Name="lbxJugadores" HorizontalAlignment="Left" Height="190" Margin="28,29,0,0" VerticalAlignment="Top" Width="177" Background="{x:Null}" Foreground="White">
             <ListBoxItem Content="NombreJugadorAquí" Background="#FF5E6472"/>
         </ListBox>
         <Label x:Name="lbIdioma" Content="{x:Static p:Resources.Spanish}" HorizontalAlignment="Left" Margin="645,31,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
         <Label x:Name="lbEsperandoAnfitrion" Content="{x:Static p:Resources.WaitingGameHost}" HorizontalAlignment="Left" Margin="506,185,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
+        <ListBox x:Name="lbxChat" HorizontalAlignment="Left" Height="110" Margin="28,249,0,0" VerticalAlignment="Top" Width="481" Background="#FF404040" BorderBrush="White">
+            <ListBoxItem Content="Hola mundo" Foreground="White" FontSize="14"/>
+        </ListBox>
+        <TextBox x:Name="tbChat" HorizontalAlignment="Left" Height="35" Margin="28,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnEnviarMensaje" Content="Enviar -&gt;" HorizontalAlignment="Left" Margin="429,359,0,0" VerticalAlignment="Top" Width="80" Height="35" Click="BtnEnviarMensaje_Click"/>
 
     </Grid>
 </Window>

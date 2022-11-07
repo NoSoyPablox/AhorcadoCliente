@@ -19,6 +19,7 @@ namespace AhorcadoCliente.Interfaces
     /// </summary>
     public partial class SalaDeEsperaInvitado : Window
     {
+        private string nombreJugador = "Pablo"; //obtener
         public SalaDeEsperaInvitado()
         {
             InitializeComponent();
@@ -29,6 +30,20 @@ namespace AhorcadoCliente.Interfaces
             PantallaJugar pantallaJugar = new PantallaJugar();
             pantallaJugar.Show();
             this.Close();
+        }
+
+        private void BtnEnviarMensaje_Click(object sender, RoutedEventArgs e)
+        {
+            if(!string.IsNullOrWhiteSpace(tbChat.Text))
+            {
+                ListBoxItem lbiMensaje = new ListBoxItem();
+                lbiMensaje.Content = nombreJugador+": "+tbChat.Text;
+                lbiMensaje.Foreground = Brushes.White;
+                lbiMensaje.FontSize = 14;
+                
+                lbxChat.Items.Add(lbiMensaje);
+
+            }
         }
     }
 }
