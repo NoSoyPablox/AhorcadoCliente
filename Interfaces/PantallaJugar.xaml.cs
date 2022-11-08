@@ -36,7 +36,8 @@ namespace AhorcadoCliente.Interfaces
         {
             PantallaUnirsePartida pantallaUnirsePartida = new PantallaUnirsePartida();
             pantallaUnirsePartida.Show();
-            this.Close();
+            //this.IsEnabled = false;
+            //this.Close();
         }
 
         private void btnJugar_Click(object sender, RoutedEventArgs e)
