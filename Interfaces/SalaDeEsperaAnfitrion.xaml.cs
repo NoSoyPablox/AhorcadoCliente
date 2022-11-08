@@ -24,14 +24,14 @@ namespace AhorcadoCliente.Interfaces
             InitializeComponent();
         }
 
-        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        private void BtnVolverClick(object sender, RoutedEventArgs e)
         {
             PantallaJugar pantallaJugar = new PantallaJugar();
             pantallaJugar.Show();
             this.Close();
         }
 
-        private void btnIniciarPartida_Click(object sender, RoutedEventArgs e)
+        private void BtnIniciarPartidaClick(object sender, RoutedEventArgs e)
         {
             PartidaAdivinador partidaAdivinador = new PartidaAdivinador();
             partidaAdivinador.Show();
