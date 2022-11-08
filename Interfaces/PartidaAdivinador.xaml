@@ -20,7 +20,7 @@
         <ListBox x:Name="lbx" HorizontalAlignment="Left" Height="112" Margin="28,29,0,0" VerticalAlignment="Top" Width="144" Background="{x:Null}" Foreground="White">
             <ListBoxItem Content="NombreJugadorAquí" Background="#FF5E6472"/>
         </ListBox>
-        <Button x:Name="btnAbandonar" Content="{x:Static p:Resources.LeaveGame}" HorizontalAlignment="Left" Margin="49,163,0,0" VerticalAlignment="Top" Width="96" Height="22" Click="btnAbandonar_Click"/>
+        <Button x:Name="btnAbandonar" Content="{x:Static p:Resources.LeaveGame}" HorizontalAlignment="Left" Margin="49,163,0,0" VerticalAlignment="Top" Width="96" Height="22" Click="BtnAbandonarClick"/>
         <Button x:Name="A" Content="A" HorizontalAlignment="Left" Margin="36,233,0,0" VerticalAlignment="Top" Width="44" Height="42"/>
         <Button x:Name="B" Content="B" HorizontalAlignment="Left" Margin="112,233,0,0" VerticalAlignment="Top" Width="44" Height="42"/>
         <Button x:Name="C" Content="C" HorizontalAlignment="Left" Margin="186,233,0,0" VerticalAlignment="Top" Width="46" Height="42"/>

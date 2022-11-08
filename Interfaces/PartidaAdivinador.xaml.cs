@@ -24,7 +24,7 @@ namespace AhorcadoCliente.Interfaces
             InitializeComponent();
         }
 
-        private void btnAbandonar_Click(object sender, RoutedEventArgs e)
+        private void BtnAbandonarClick(object sender, RoutedEventArgs e)
         {
             PantallaJugar pantallaJugar = new PantallaJugar();
             pantallaJugar.Show();
