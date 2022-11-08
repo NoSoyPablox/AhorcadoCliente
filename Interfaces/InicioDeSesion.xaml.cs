@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,26 +28,40 @@ namespace AhorcadoCliente
             cbIdioma.Text = App.idioma;
         }
 
-        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        private void BtnSalirClick(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        private void btnIniciarSesion_Click(object sender, RoutedEventArgs e)
+        private void BtnIniciarSesionClick(object sender, RoutedEventArgs e)
         {
-            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-            pantallaPrincipal.Show();
-            this.Close();
+            ServiceReference1.Service1Client service1 = new ServiceReference1.Service1Client();
+            String correo = tbCorreo.Text;
+            String password = "Unshowmas13";
+            String AlertLogin = "Bienvenido";
+            String AlertLoginIncorrect = "Usuario o contraseña incorrecta";
+            bool respuesta;
+                respuesta = service1.Login(correo, password);
+                if (respuesta == true) {
+                    MessageBox.Show(AlertLogin);
+                    PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                    pantallaPrincipal.Show();
+                    this.Close();
+                }
+                else {
+                    MessageBox.Show(AlertLoginIncorrect);
+                }
+            
         }
 
-        private void cbIdioma_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void CbIdiomaSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            String usuarioIntroducido = tbUsuario.Text;
+            String usuarioIntroducido = tbCorreo.Text;
             if (cbIdioma.SelectedItem == cbiEspañol && App.idioma != "Español")
             {
                 App.IdiomaEspañol();
                 InicioDeSesion inicioDeSesion = new InicioDeSesion();
-                inicioDeSesion.tbUsuario.Text = usuarioIntroducido;
+                inicioDeSesion.tbCorreo.Text = usuarioIntroducido;
                 inicioDeSesion.cbIdioma.Text = "Español";
                 inicioDeSesion.Show();
                 this.Close();
@@ -55,7 +70,7 @@ namespace AhorcadoCliente
             {
                 App.IdiomaIngles();
                 InicioDeSesion inicioDeSesion = new InicioDeSesion();
-                inicioDeSesion.tbUsuario.Text = usuarioIntroducido;
+                inicioDeSesion.tbCorreo.Text = usuarioIntroducido;
                 inicioDeSesion.cbIdioma.Text = "English";
                 inicioDeSesion.Show();
                 this.Close();

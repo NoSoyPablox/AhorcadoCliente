@@ -25,7 +25,7 @@ namespace AhorcadoCliente.Interfaces
             InitializeComponent();
         }
 
-        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        private void BtnVolverClick(object sender, RoutedEventArgs e)
         {
             PantallaJugar pantallaJugar = new PantallaJugar();
             pantallaJugar.Show();

@@ -25,29 +25,28 @@ namespace AhorcadoCliente.Interfaces
             cbIdioma.Text = App.idioma;
         }
 
-        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        private void BtnVolverClick(object sender, RoutedEventArgs e)
         {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.Show();
             this.Close();
         }
 
-        private void btnUnirse_Click(object sender, RoutedEventArgs e)
+        private void BtnUnirseClick(object sender, RoutedEventArgs e)
         {
             PantallaUnirsePartida pantallaUnirsePartida = new PantallaUnirsePartida();
             pantallaUnirsePartida.Show();
-            //this.IsEnabled = false;
+
             //this.Close();
         }
 
-        private void btnJugar_Click(object sender, RoutedEventArgs e)
+        private void BtnJugarClick(object sender, RoutedEventArgs e)
         {
             SalaDeEsperaAnfitrion salaDeEsperaAnfitrion = new SalaDeEsperaAnfitrion();
             salaDeEsperaAnfitrion.Show();
             this.Close();
         }
-
-        private void cbIdioma_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void CbIdiomaSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (cbIdioma.SelectedItem == cbiEspañol && App.idioma != "Español")
             {
