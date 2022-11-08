@@ -124,6 +124,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Mujer.
+        /// </summary>
+        public static string Female {
+            get {
+                return ResourceManager.GetString("Female", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Idioma de la partida:.
         /// </summary>
         public static string GameLanguage {
@@ -214,6 +223,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Hombre.
+        /// </summary>
+        public static string Male {
+            get {
+                return ResourceManager.GetString("Male", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Nombre.
         /// </summary>
         public static string Name {
@@ -246,6 +264,15 @@ namespace AhorcadoCliente.Properties {
         public static string Register_Button {
             get {
                 return ResourceManager.GetString("Register_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Repetir contraseña.
+        /// </summary>
+        public static string RepeatPassword {
+            get {
+                return ResourceManager.GetString("RepeatPassword", resourceCulture);
             }
         }
         

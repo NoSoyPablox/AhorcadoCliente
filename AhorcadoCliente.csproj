@@ -82,6 +82,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Interfaces\PantallaRegistro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Interfaces\PantallaUnirsePartida.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +109,9 @@
     </Compile>
     <Compile Include="Interfaces\PantallaPrincipal.xaml.cs">
       <DependentUpon>PantallaPrincipal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\PantallaRegistro.xaml.cs">
+      <DependentUpon>PantallaRegistro.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\PantallaUnirsePartida.xaml.cs">
       <DependentUpon>PantallaUnirsePartida.xaml</DependentUpon>

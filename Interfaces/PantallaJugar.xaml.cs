@@ -36,6 +36,7 @@ namespace AhorcadoCliente.Interfaces
         {
             PantallaUnirsePartida pantallaUnirsePartida = new PantallaUnirsePartida();
             pantallaUnirsePartida.Show();
+
             //this.Close();
         }
 

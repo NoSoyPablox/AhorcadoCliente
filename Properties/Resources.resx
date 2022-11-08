@@ -138,6 +138,9 @@
   <data name="Exit" xml:space="preserve">
     <value>Salir</value>
   </data>
+  <data name="Female" xml:space="preserve">
+    <value>Mujer</value>
+  </data>
   <data name="GameLanguage" xml:space="preserve">
     <value>Idioma de la partida:</value>
   </data>
@@ -168,6 +171,9 @@
   <data name="LogOut" xml:space="preserve">
     <value>Cerrar Sesion</value>
   </data>
+  <data name="Male" xml:space="preserve">
+    <value>Hombre</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Nombre</value>
   </data>
@@ -179,6 +185,9 @@
   </data>
   <data name="Register_Button" xml:space="preserve">
     <value>Registrar</value>
+  </data>
+  <data name="RepeatPassword" xml:space="preserve">
+    <value>Repetir contraseña</value>
   </data>
   <data name="Sex" xml:space="preserve">
     <value>Sexo</value>
