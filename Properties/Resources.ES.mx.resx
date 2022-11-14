@@ -147,6 +147,9 @@
   <data name="GameLanguage" xml:space="preserve">
     <value>Idioma de la partida:</value>
   </data>
+  <data name="GuessInstruction" xml:space="preserve">
+    <value>Introduce la palabra con la que deseas intentar adivinar</value>
+  </data>
   <data name="GuessWord" xml:space="preserve">
     <value>Adivinar palabra</value>
   </data>

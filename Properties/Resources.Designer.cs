@@ -151,6 +151,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Introduce la palabra con la que deseas intentar adivinar.
+        /// </summary>
+        public static string GuessInstruction {
+            get {
+                return ResourceManager.GetString("GuessInstruction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Adivinar palabra.
         /// </summary>
         public static string GuessWord {

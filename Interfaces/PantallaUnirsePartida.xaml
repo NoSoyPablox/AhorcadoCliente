@@ -13,8 +13,8 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF4B3C8B" Offset="0"/>
-                <GradientStop Color="#FFA59EC3" Offset="1"/>
+                <GradientStop Color="#FF24444D" Offset="1"/>
+                <GradientStop Color="#FF5F448F"/>
             </LinearGradientBrush>
         </Grid.Background>
         <TextBox x:Name="tbCodigoPartida" HorizontalAlignment="Left" Height="50" Margin="56,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="32" FontWeight="Bold" TextDecorations="{x:Null}"/>

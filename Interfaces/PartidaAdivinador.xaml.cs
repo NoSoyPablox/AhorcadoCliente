@@ -30,5 +30,14 @@ namespace AhorcadoCliente.Interfaces
             pantallaJugar.Show();
             this.Close();
         }
+
+        private void btnAdivinar_Click(object sender, RoutedEventArgs e)
+        {
+            AdivinarPalabra adivinarPalabra= new AdivinarPalabra();
+            adivinarPalabra.recibirPartida(this);
+            adivinarPalabra.Show();
+            this.IsEnabled = false;
+        }
+        
     }
 }

@@ -50,7 +50,7 @@
         <Button x:Name="X" Content="X" HorizontalAlignment="Left" Margin="416,355,0,0" VerticalAlignment="Top" Width="44" Height="42"/>
         <Button x:Name="Y" Content="Y" HorizontalAlignment="Left" Margin="488,355,0,0" VerticalAlignment="Top" Width="44" Height="42"/>
         <Button x:Name="Z" Content="Z" HorizontalAlignment="Left" Margin="560,355,0,0" VerticalAlignment="Top" Width="44" Height="42"/>
-        <Button x:Name="btnAdivinar" Content="{x:Static p:Resources.GuessWord}" HorizontalAlignment="Left" Margin="634,355,0,0" VerticalAlignment="Top" Width="122" Height="42" Foreground="White" FontWeight="Bold" FontSize="14">
+        <Button x:Name="btnAdivinar" Content="{x:Static p:Resources.GuessWord}" HorizontalAlignment="Left" Margin="634,355,0,0" VerticalAlignment="Top" Width="122" Height="42" Foreground="White" FontWeight="Bold" FontSize="14" Click="btnAdivinar_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFEAD404" Offset="1"/>
