@@ -27,13 +27,17 @@ namespace AhorcadoCliente.Interfaces
             btnGuardarCambios.IsEnabled= false;
             tbNombre.IsEnabled= false;
             tbUsuario.IsEnabled= false;
-            tbEdad.IsEnabled= false;
             cbEdad.IsEnabled= false;
-            pswContraseña.IsEnabled= false;
+            pswNuevaContraseña.IsEnabled= false;
             pswRepetirContraseña.IsEnabled = false;
             pswcontrasenaActual.IsEnabled= false;
             rbHombre.IsEnabled= false;
             rbMujer.IsEnabled= false;
+
+            for (int i = 1; i < 100; i++)
+            {
+                cbEdad.Items.Add(i);
+            }
         }
 
         private void rbHombre_Checked(object sender, RoutedEventArgs e)
@@ -80,13 +84,26 @@ namespace AhorcadoCliente.Interfaces
             btnGuardarCambios.IsEnabled = true;
             tbNombre.IsEnabled = true;
             tbUsuario.IsEnabled = true;
-            tbEdad.IsEnabled = true;
             cbEdad.IsEnabled = true;
-            pswContraseña.IsEnabled = true;
+            pswNuevaContraseña.IsEnabled = true;
             pswRepetirContraseña.IsEnabled = true;
             pswcontrasenaActual.IsEnabled = true;
             rbHombre.IsEnabled = true;
             rbMujer.IsEnabled = true;
+        }
+
+        private void btnGuardarCambios_Click(object sender, RoutedEventArgs e)
+        {
+            if (pswNuevaContraseña.Password.ToString() == pswRepetirContraseña.Password.ToString())
+            {
+                Console.WriteLine("Si coincide");
+
+            }
+            else
+            {
+                Console.WriteLine("No coincide man :C");
+
+            }
         }
     }
 }
