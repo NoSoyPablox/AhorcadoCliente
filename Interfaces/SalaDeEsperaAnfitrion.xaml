@@ -24,6 +24,9 @@
             <ListBoxItem Content="NombreJugadorAquí" Background="#FF5E6472"/>
         </ListBox>
         <Label x:Name="lbIdioma" Content="{x:Static p:Resources.Spanish}" HorizontalAlignment="Left" Margin="645,31,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <ListBox x:Name="lbxChat" HorizontalAlignment="Left" Height="110" Margin="28,249,0,0" VerticalAlignment="Top" Width="481" Background="#FF404040" BorderBrush="White"/>
+        <TextBox x:Name="tbChat" HorizontalAlignment="Left" Height="35" Margin="28,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393" FontWeight="Bold" FontSize="14" KeyDown="tbChat_KeyDown"/>
+        <Button x:Name="btnEnviarMensaje" Content="Enviar -&gt;" HorizontalAlignment="Left" Margin="429,359,0,0" VerticalAlignment="Top" Width="80" Height="35" Click="BtnEnviarMensaje_Click"/>
 
     </Grid>
 </Window>

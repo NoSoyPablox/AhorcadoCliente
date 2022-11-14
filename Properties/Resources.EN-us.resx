@@ -129,6 +129,9 @@
   <data name="CreateRoom" xml:space="preserve">
     <value>Create room</value>
   </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Currrent password</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
@@ -171,11 +174,17 @@
   <data name="LogOut" xml:space="preserve">
     <value>Log out</value>
   </data>
+  <data name="Make changes" xml:space="preserve">
+    <value>Make changes</value>
+  </data>
   <data name="Male" xml:space="preserve">
     <value>Male</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>

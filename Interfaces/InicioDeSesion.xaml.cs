@@ -35,7 +35,7 @@ namespace AhorcadoCliente
 
         private void BtnIniciarSesionClick(object sender, RoutedEventArgs e)
         {
-            ServiceReference1.Service1Client service1 = new ServiceReference1.Service1Client();
+            /*ServiceReference1.Service1Client service1 = new ServiceReference1.Service1Client();
             String correo = tbCorreo.Text;
             String password = "Unshowmas13";
             String AlertLogin = "Bienvenido";
@@ -50,7 +50,10 @@ namespace AhorcadoCliente
                 }
                 else {
                     MessageBox.Show(AlertLoginIncorrect);
-                }
+                }*/
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.Show();
+            this.Close();
             
         }
 
@@ -77,7 +80,7 @@ namespace AhorcadoCliente
             }
         }
 
-        private void btnRegistrarme_Click(object sender, RoutedEventArgs e)
+        private void btnRegistrarmeClick(object sender, RoutedEventArgs e)
         {
             PantallaRegistro pantallaRegistro = new PantallaRegistro();
             pantallaRegistro.Show();

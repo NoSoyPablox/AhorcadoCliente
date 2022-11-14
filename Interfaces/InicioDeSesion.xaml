@@ -23,7 +23,7 @@
         <Label x:Name="lbContraseña" Content="{x:Static p:Resources.Password}" HorizontalAlignment="Left" Margin="82,180,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
         <TextBox x:Name="tbCorreo" HorizontalAlignment="Left" Height="23" Margin="214,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <PasswordBox x:Name="pswContraseña" HorizontalAlignment="Left" Margin="214,188,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
-        <Button x:Name="btnRegistrarme" Content="{x:Static p:Resources.Register_Button}" HorizontalAlignment="Left" Margin="620,307,0,0" VerticalAlignment="Top" Width="90" Height="26"/>
+        <Button x:Name="btnRegistrarme" Content="{x:Static p:Resources.Register_Button}" HorizontalAlignment="Left" Margin="620,307,0,0" VerticalAlignment="Top" Width="90" Height="26" Click="btnRegistrarmeClick"/>
         <Button x:Name="btnIniciarSesion" Content="{x:Static p:Resources.Login_Button}" HorizontalAlignment="Left" Margin="162,270,0,0" VerticalAlignment="Top" Width="104" Height="22" Click="BtnIniciarSesionClick"/>
         <Button x:Name="btnSalir" Content="{x:Static p:Resources.Exit}" HorizontalAlignment="Left" Margin="175,307,0,0" VerticalAlignment="Top" Width="76" Click="BtnSalirClick"/>
         <Label x:Name="lbIdioma" Content="{x:Static p:Resources.Language}" HorizontalAlignment="Left" Margin="567,35,0,0" VerticalAlignment="Top" Foreground="White" FontSize="15"/>

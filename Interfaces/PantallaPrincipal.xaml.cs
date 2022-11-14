@@ -63,5 +63,12 @@ namespace AhorcadoCliente.Interfaces
                 this.Close();
             }
         }
+
+        private void btnInformacion_Click(object sender, RoutedEventArgs e)
+        {
+            InformacionUsuario informacionUsuario = new InformacionUsuario();
+            informacionUsuario.Show();
+            this.Close();
+        }
     }
 }

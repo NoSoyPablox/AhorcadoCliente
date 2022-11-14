@@ -19,6 +19,7 @@ namespace AhorcadoCliente.Interfaces
     /// </summary>
     public partial class PantallaUnirsePartida : Window
     {
+        private PantallaJugar pantallaAnterior;
         public PantallaUnirsePartida()
         {
             InitializeComponent();
@@ -26,16 +27,22 @@ namespace AhorcadoCliente.Interfaces
 
         private void BtnVolverClick(object sender, RoutedEventArgs e)
         {
-            PantallaJugar pantallaJugar = new PantallaJugar();
-            pantallaJugar.Show();
+            pantallaAnterior.IsEnabled = true;
             this.Close();
+            
         }
 
         private void BtnUnirseClick(object sender, RoutedEventArgs e)
         {
             SalaDeEsperaInvitado salaDeEsperaInvitado = new SalaDeEsperaInvitado();
+            pantallaAnterior.Close();
             salaDeEsperaInvitado.Show();
             this.Close();
+        }
+        
+        public void recibirPantallaAnterior(PantallaJugar pantallaJugar)
+        {
+            this.pantallaAnterior = pantallaJugar;
         }
     }
 }
