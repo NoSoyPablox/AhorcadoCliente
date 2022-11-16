@@ -28,8 +28,14 @@ namespace AhorcadoCliente.Interfaces
             tbNombre.IsEnabled= false;
             tbUsuario.IsEnabled= false;
             cbEdad.IsEnabled= false;
-            pswNuevaContraseña.IsEnabled= false;
-            pswRepetirContraseña.IsEnabled = false;
+            lbContrasenaActual.Opacity = 0;
+            lbNuevaContrasena.Opacity = 0;
+            lbRepetirContrasena.Opacity = 0;
+            pswcontrasenaActual.Opacity = 0;
+            pswNuevaContrasena.Opacity = 0;
+            pswRepetirContrasena.Opacity = 0;
+            pswNuevaContrasena.IsEnabled= false;
+            pswRepetirContrasena.IsEnabled = false;
             pswcontrasenaActual.IsEnabled= false;
             rbHombre.IsEnabled= false;
             rbMujer.IsEnabled= false;
@@ -85,16 +91,22 @@ namespace AhorcadoCliente.Interfaces
             tbNombre.IsEnabled = true;
             tbUsuario.IsEnabled = true;
             cbEdad.IsEnabled = true;
-            pswNuevaContraseña.IsEnabled = true;
-            pswRepetirContraseña.IsEnabled = true;
+            pswNuevaContrasena.IsEnabled = true;
+            pswRepetirContrasena.IsEnabled = true;
             pswcontrasenaActual.IsEnabled = true;
+            lbContrasenaActual.Opacity = 1;
+            lbNuevaContrasena.Opacity = 1;
+            lbRepetirContrasena.Opacity = 1;
+            pswcontrasenaActual.Opacity = 1;
+            pswNuevaContrasena.Opacity = 1;
+            pswRepetirContrasena.Opacity = 1;
             rbHombre.IsEnabled = true;
             rbMujer.IsEnabled = true;
         }
 
         private void btnGuardarCambios_Click(object sender, RoutedEventArgs e)
         {
-            if (pswNuevaContraseña.Password.ToString() == pswRepetirContraseña.Password.ToString())
+            if (pswNuevaContrasena.Password.ToString() == pswRepetirContrasena.Password.ToString())
             {
                 Console.WriteLine("Si coincide");
 

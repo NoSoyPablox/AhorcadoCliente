@@ -9,6 +9,7 @@
         mc:Ignorable="d"
         Title="AdivinarPalabra" Height="250" Width="600"
         WindowStartupLocation="CenterScreen"
+        WindowStyle ="None"
         >
     <Grid>
         <Grid.Background>

@@ -9,6 +9,7 @@
         mc:Ignorable="d"
         Title="PantallaUnirsePartida" Height="250" Width="650"
         WindowStartupLocation="CenterScreen"
+        WindowStyle ="None"
         >
     <Grid>
         <Grid.Background>

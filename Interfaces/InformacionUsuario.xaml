@@ -9,6 +9,7 @@
         ResizeMode="NoResize"
         Title="InformacionUsuario" Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
+        WindowStyle ="None"
         >
     <Grid>
         <Grid.Background>
@@ -33,11 +34,11 @@
         </ComboBox>
         <Button x:Name="btnEditar" Content="{x:Static p:Resources.MakeChanges}" HorizontalAlignment="Left" Margin="578,159,0,0" VerticalAlignment="Top" Width="160" Click="btnEditar_Click" Height="33"/>
         <Button x:Name="btnVolver" Content="{x:Static p:Resources.Back}" HorizontalAlignment="Left" Margin="610,253,0,0" VerticalAlignment="Top" Width="96" Click="btnVolver_Click" Height="31" Grid.RowSpan="2"/>
-        <Button x:Name="btnGuardarCambios" Content="Guardar cambios" HorizontalAlignment="Left" Margin="578,205,0,0" VerticalAlignment="Top" Width="160" Height="33" Click="btnGuardarCambios_Click"/>
-        <Label x:Name="lbContraseña" Content="{x:Static p:Resources.NewPassword}" HorizontalAlignment="Left" Margin="51,316,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" Height="34" Width="175"/>
-        <Label x:Name="lbRepetirContraseña" Content="{x:Static p:Resources.RepeatPassword}" HorizontalAlignment="Left" Margin="52,362,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Height="36" Width="174"/>
-        <PasswordBox x:Name="pswNuevaContraseña" HorizontalAlignment="Left" Margin="254,326,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
-        <PasswordBox x:Name="pswRepetirContraseña" HorizontalAlignment="Left" Margin="253,370,0,0" VerticalAlignment="Top" Width="122" Height="21"/>
+        <Button x:Name="btnGuardarCambios" Content="{x:Static p:Resources.SaveChanges}" HorizontalAlignment="Left" Margin="578,205,0,0" VerticalAlignment="Top" Width="160" Height="33" Click="btnGuardarCambios_Click"/>
+        <Label x:Name="lbNuevaContrasena" Content="{x:Static p:Resources.NewPassword}" HorizontalAlignment="Left" Margin="51,316,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" Height="34" Width="175"/>
+        <Label x:Name="lbRepetirContrasena" Content="{x:Static p:Resources.RepeatPassword}" HorizontalAlignment="Left" Margin="52,362,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Height="36" Width="174"/>
+        <PasswordBox x:Name="pswNuevaContrasena" HorizontalAlignment="Left" Margin="254,326,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
+        <PasswordBox x:Name="pswRepetirContrasena" HorizontalAlignment="Left" Margin="253,370,0,0" VerticalAlignment="Top" Width="122" Height="21"/>
         <Label x:Name="lbContrasenaActual" Content="{x:Static p:Resources.CurrentPassword}" HorizontalAlignment="Left" Margin="53,270,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" Height="36" Width="174"/>
         <PasswordBox x:Name="pswcontrasenaActual" HorizontalAlignment="Left" Margin="254,277,0,0" VerticalAlignment="Top" Width="122" Height="22"/>
     </Grid>

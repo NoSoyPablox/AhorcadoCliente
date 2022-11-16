@@ -54,7 +54,7 @@ namespace AhorcadoCliente
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.Show();
             this.Close();
-            
+
         }
 
         private void CbIdiomaSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -85,6 +85,16 @@ namespace AhorcadoCliente
             PantallaRegistro pantallaRegistro = new PantallaRegistro();
             pantallaRegistro.Show();
             this.Close();
+        }
+
+        private void pswContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                pantallaPrincipal.Show();
+                this.Close();
+            }
         }
     }
 }

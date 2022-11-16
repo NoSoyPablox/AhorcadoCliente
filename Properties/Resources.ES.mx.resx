@@ -201,6 +201,9 @@
   <data name="RepeatPasword" xml:space="preserve">
     <value>Repetir contraseña</value>
   </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Guardar cambios</value>
+  </data>
   <data name="Sex" xml:space="preserve">
     <value>Sexo</value>
   </data>

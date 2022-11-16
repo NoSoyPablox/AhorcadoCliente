@@ -61,6 +61,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Interfaces\ElegirPalabra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Interfaces\InformacionUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,6 +84,9 @@
     </Compile>
     <Compile Include="Interfaces\AdivinarPalabra.xaml.cs">
       <DependentUpon>AdivinarPalabra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ElegirPalabra.xaml.cs">
+      <DependentUpon>ElegirPalabra.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\InformacionUsuario.xaml.cs">
       <DependentUpon>InformacionUsuario.xaml</DependentUpon>
