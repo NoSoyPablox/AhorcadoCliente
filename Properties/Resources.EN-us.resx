@@ -204,11 +204,18 @@
   <data name="RepeatPassword" xml:space="preserve">
     <value>Repeat password</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>* Required</value>
+  </data>
   <data name="SaveChanges" xml:space="preserve">
     <value>Save changes</value>
   </data>
   <data name="Sex" xml:space="preserve">
     <value>Sex</value>
+  </data>
+  <data name="SignUpMessage" xml:space="preserve">
+    <value>Don't have an account?
+Sign up below</value>
   </data>
   <data name="Spanish" xml:space="preserve">
     <value>Spanish</value>

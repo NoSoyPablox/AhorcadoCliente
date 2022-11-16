@@ -217,5 +217,20 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\Wondering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\Megaphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Megaphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\Alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Alert.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

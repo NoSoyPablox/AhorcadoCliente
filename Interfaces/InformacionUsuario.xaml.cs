@@ -39,6 +39,9 @@ namespace AhorcadoCliente.Interfaces
             pswcontrasenaActual.IsEnabled= false;
             rbHombre.IsEnabled= false;
             rbMujer.IsEnabled= false;
+            reContrasenas.Opacity = 0;
+            imgAlerta.Opacity = 0;
+            lbRequerido.Opacity = 0;
 
             for (int i = 1; i < 100; i++)
             {
@@ -102,6 +105,9 @@ namespace AhorcadoCliente.Interfaces
             pswRepetirContrasena.Opacity = 1;
             rbHombre.IsEnabled = true;
             rbMujer.IsEnabled = true;
+            reContrasenas.Opacity = 1;
+            imgAlerta.Opacity = 1;
+            lbRequerido.Opacity = 1;
         }
 
         private void btnGuardarCambios_Click(object sender, RoutedEventArgs e)

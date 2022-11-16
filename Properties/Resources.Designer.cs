@@ -313,6 +313,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a * Requerido.
+        /// </summary>
+        public static string Required {
+            get {
+                return ResourceManager.GetString("Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guardar cambios.
         /// </summary>
         public static string SaveChanges {
@@ -327,6 +336,16 @@ namespace AhorcadoCliente.Properties {
         public static string Sex {
             get {
                 return ResourceManager.GetString("Sex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿No tienes una cuenta?
+        ///Crea una a continuación.
+        /// </summary>
+        public static string SignUpMessage {
+            get {
+                return ResourceManager.GetString("SignUpMessage", resourceCulture);
             }
         }
         

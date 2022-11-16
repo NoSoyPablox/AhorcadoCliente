@@ -201,11 +201,18 @@
   <data name="RepeatPassword" xml:space="preserve">
     <value>Repetir contraseña</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>* Requerido</value>
+  </data>
   <data name="SaveChanges" xml:space="preserve">
     <value>Guardar cambios</value>
   </data>
   <data name="Sex" xml:space="preserve">
     <value>Sexo</value>
+  </data>
+  <data name="SignUpMessage" xml:space="preserve">
+    <value>¿No tienes una cuenta?
+Crea una a continuación</value>
   </data>
   <data name="Spanish" xml:space="preserve">
     <value>Español</value>
