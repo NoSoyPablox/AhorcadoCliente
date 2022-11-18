@@ -14,8 +14,7 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="722*"/>
-            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -25,22 +24,22 @@
         </Grid.Background>
         <Rectangle HorizontalAlignment="Left" Height="355" Margin="72,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="276" Opacity="0.4" Fill="Black"/>
 
-        <Label x:Name="lbInicioDeSesion" Content="{x:Static p:Resources.Login_Window}" HorizontalAlignment="Left" Margin="108,62,0,0" VerticalAlignment="Top" Foreground="White" FontSize="30"/>
+        <Label x:Name="lbInicioDeSesion" Content="{x:Static p:Resources.Login_Window}" HorizontalAlignment="Left" Margin="92,64,0,0" VerticalAlignment="Top" Foreground="White" FontSize="30" Width="240" HorizontalContentAlignment="Center"/>
         <Label x:Name="lbUsuario" Content="{x:Static p:Resources.User}" HorizontalAlignment="Left" Margin="80,146,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
         <Label x:Name="lbContraseña" Content="{x:Static p:Resources.Password}" HorizontalAlignment="Left" Margin="80,206,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
         <TextBox x:Name="tbCorreo" HorizontalAlignment="Left" Height="24" Margin="212,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <PasswordBox x:Name="pswContraseña" HorizontalAlignment="Left" Margin="212,214,0,0" VerticalAlignment="Top" Width="120" Height="24" KeyDown="pswContraseña_KeyDown"/>
-        <Button x:Name="btnRegistrarme" Content="{x:Static p:Resources.Register_Button}" HorizontalAlignment="Left" Margin="567,316,0,0" VerticalAlignment="Top" Width="116" Height="26" Click="btnRegistrarmeClick"/>
+        <Button x:Name="btnRegistrarme" Content="{x:Static p:Resources.Register_Button}" HorizontalAlignment="Left" Margin="567,184,0,0" VerticalAlignment="Top" Width="116" Height="26" Click="btnRegistrarmeClick"/>
         <Button x:Name="btnIniciarSesion" Content="{x:Static p:Resources.Login_Button}" HorizontalAlignment="Left" Margin="160,296,0,0" VerticalAlignment="Top" Width="104" Height="22" Click="BtnIniciarSesionClick"/>
         <Button x:Name="btnSalir" Content="{x:Static p:Resources.Exit}" HorizontalAlignment="Left" Margin="174,334,0,0" VerticalAlignment="Top" Width="76" Click="BtnSalirClick"/>
         <Label x:Name="lbIdioma" Content="{x:Static p:Resources.Language}" HorizontalAlignment="Left" Margin="567,35,0,0" VerticalAlignment="Top" Foreground="White" FontSize="15"/>
-        <ComboBox x:Name="cbIdioma" HorizontalAlignment="Left" Margin="654,41,0,0" VerticalAlignment="Top" Width="108" SelectionChanged="CbIdiomaSelectionChanged" Grid.ColumnSpan="2">
+        <ComboBox x:Name="cbIdioma" HorizontalAlignment="Left" Margin="654,41,0,0" VerticalAlignment="Top" Width="108" SelectionChanged="CbIdiomaSelectionChanged">
             <ComboBoxItem x:Name="cbiEspañol" Content="{x:Static p:Resources.Spanish}"/>
             <ComboBoxItem x:Name="cbiIngles" Content="{x:Static p:Resources.English}"/>
         </ComboBox>
-        <Rectangle Fill="#FF171717" HorizontalAlignment="Left" Height="65" Margin="483,236,0,0" Stroke="Black" VerticalAlignment="Top" Width="276" Opacity="0.5" Grid.ColumnSpan="2"/>
-        <Label x:Name="lbRegistrar" Content="{x:Static p:Resources.SignUpMessage}" HorizontalAlignment="Left" Margin="553,241,0,0" VerticalAlignment="Top" Height="55" Width="195" OpacityMask="Black" Foreground="White" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Image HorizontalAlignment="Left" Height="50" Margin="494,244,0,0" VerticalAlignment="Top" Width="50" Source="Megaphone.png" RenderTransformOrigin="0.5,0.5">
+        <Rectangle Fill="#FF171717" HorizontalAlignment="Left" Height="64" Margin="483,112,0,0" Stroke="Black" VerticalAlignment="Top" Width="276" Opacity="0.5"/>
+        <Label x:Name="lbRegistrar" Content="{x:Static p:Resources.SignUpMessage}" HorizontalAlignment="Left" Margin="553,116,0,0" VerticalAlignment="Top" Height="56" Width="195" OpacityMask="Black" Foreground="White" FontSize="16" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="494,120,0,0" VerticalAlignment="Top" Width="50" Source="Megaphone.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -50,6 +49,13 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Rectangle Fill="#FF171717" HorizontalAlignment="Left" Height="65" Margin="484,261,0,0" Stroke="Black" VerticalAlignment="Top" Width="276" Opacity="0.5"/>
+        <Label x:Name="lbJugarInvitado" Content="{x:Static p:Resources.GuessPlayerMessage}" HorizontalAlignment="Left" Margin="554,267,0,0" VerticalAlignment="Top" Height="55" Width="210" OpacityMask="Black" Foreground="White" FontSize="16" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="498,267,0,0" VerticalAlignment="Top" Width="50" Source="GuessPlayer.png"/>
+        <Button x:Name="btnJugarInvitado" Content="{x:Static p:Resources.PlayAsGuess}" HorizontalAlignment="Left" Margin="567,336,0,0" VerticalAlignment="Top" Width="116" Height="26"/>
+        <Rectangle Fill="#FF171717" HorizontalAlignment="Left" Height="2" Margin="646,241,0,0" Stroke="Black" VerticalAlignment="Top" Width="105"/>
+        <Rectangle Fill="#FF171717" HorizontalAlignment="Left" Height="2" Margin="490,241,0,0" Stroke="Black" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="lbO" Content="{x:Static p:Resources.Or}" HorizontalAlignment="Left" Margin="600,226,0,0" VerticalAlignment="Top" Height="30" Width="41" OpacityMask="Black" Foreground="White" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.53,0.289" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

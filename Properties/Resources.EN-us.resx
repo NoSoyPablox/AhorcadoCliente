@@ -150,6 +150,10 @@
   <data name="GuessInstruction" xml:space="preserve">
     <value>Introduce the word that you want to try to guess with</value>
   </data>
+  <data name="GuessPlayerMessage" xml:space="preserve">
+    <value>Don't want an account?
+Play as a guess below</value>
+  </data>
   <data name="GuessWord" xml:space="preserve">
     <value>Guess word</value>
   </data>
@@ -192,11 +196,17 @@
   <data name="NewPassword" xml:space="preserve">
     <value>New password</value>
   </data>
+  <data name="Or" xml:space="preserve">
+    <value>Or</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Play</value>
+  </data>
+  <data name="PlayAsGuess" xml:space="preserve">
+    <value>Play as a guess</value>
   </data>
   <data name="Register_Button" xml:space="preserve">
     <value>Register me</value>

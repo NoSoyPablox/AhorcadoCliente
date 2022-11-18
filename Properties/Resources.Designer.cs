@@ -160,6 +160,16 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a ¿No quieres una cuenta?
+        ///Juega como invitado.
+        /// </summary>
+        public static string GuessPlayerMessage {
+            get {
+                return ResourceManager.GetString("GuessPlayerMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Adivinar palabra.
         /// </summary>
         public static string GuessWord {
@@ -277,6 +287,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a O.
+        /// </summary>
+        public static string Or {
+            get {
+                return ResourceManager.GetString("Or", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Contraseña.
         /// </summary>
         public static string Password {
@@ -291,6 +310,15 @@ namespace AhorcadoCliente.Properties {
         public static string Play {
             get {
                 return ResourceManager.GetString("Play", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Jugar como invitado.
+        /// </summary>
+        public static string PlayAsGuess {
+            get {
+                return ResourceManager.GetString("PlayAsGuess", resourceCulture);
             }
         }
         

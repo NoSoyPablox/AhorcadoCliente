@@ -59,6 +59,8 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Image HorizontalAlignment="Left" Height="59" Margin="580,29,0,0" VerticalAlignment="Top" Width="66" Source="Timer.png"/>
+        <Label x:Name="lbTemporizador" Content="" HorizontalAlignment="Left" Margin="657,47,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16" Width="99"/>
 
 
 

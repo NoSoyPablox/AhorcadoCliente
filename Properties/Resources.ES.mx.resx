@@ -150,6 +150,10 @@
   <data name="GuessInstruction" xml:space="preserve">
     <value>Introduce la palabra con la que deseas intentar adivinar</value>
   </data>
+  <data name="GuessPlayer" xml:space="preserve">
+    <value>¿No quieres una cuenta?
+Juega como invitado</value>
+  </data>
   <data name="GuessWord" xml:space="preserve">
     <value>Adivinar palabra</value>
   </data>
@@ -189,11 +193,17 @@
   <data name="NewPassword" xml:space="preserve">
     <value>Nueva contraseña</value>
   </data>
+  <data name="Or" xml:space="preserve">
+    <value>O</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>Contraseña</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Jugar</value>
+  </data>
+  <data name="PlayAsGuess" xml:space="preserve">
+    <value>Jugar como invitado</value>
   </data>
   <data name="Register_Button" xml:space="preserve">
     <value>Registrar</value>

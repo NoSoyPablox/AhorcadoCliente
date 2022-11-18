@@ -65,6 +65,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Interfaces\Images\JugarComoInvitado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Interfaces\InformacionUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -87,6 +91,9 @@
     </Compile>
     <Compile Include="Interfaces\ElegirPalabra.xaml.cs">
       <DependentUpon>ElegirPalabra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Images\JugarComoInvitado.xaml.cs">
+      <DependentUpon>JugarComoInvitado.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\InformacionUsuario.xaml.cs">
       <DependentUpon>InformacionUsuario.xaml</DependentUpon>
@@ -231,6 +238,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Interfaces\Alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\Timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\GuessPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\GuessPlayer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
