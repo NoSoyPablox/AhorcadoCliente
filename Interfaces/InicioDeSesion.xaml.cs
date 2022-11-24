@@ -27,6 +27,18 @@ namespace AhorcadoCliente
             InitializeComponent();
             cbIdioma.Text = App.idioma;
         }
+        private class Player
+        {
+            public int IdPlayer { get; set; }
+            public string NamePlayer { get; set; }
+            public string Lastname { get; set; }
+            public string Email { get; set; }
+            public string PasswordPlayer { get; set; }
+            public string Username { get; set; }
+            public int Points { get; set; }
+            public int GamesWin { get; set; }
+            public Nullable<int> IdAvatar { get; set; }
+        }
 
         private void BtnSalirClick(object sender, RoutedEventArgs e)
         {
