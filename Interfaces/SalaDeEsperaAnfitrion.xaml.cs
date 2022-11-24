@@ -17,8 +17,10 @@ namespace AhorcadoCliente.Interfaces
     /// <summary>
     /// Lógica de interacción para SalaDeEsperaAnfitrion.xaml
     /// </summary>
+    
     public partial class SalaDeEsperaAnfitrion : Window
     {
+        private string nombreJugador = "Pablo";
         public SalaDeEsperaAnfitrion()
         {
             InitializeComponent();
@@ -36,6 +38,35 @@ namespace AhorcadoCliente.Interfaces
             PartidaAdivinador partidaAdivinador = new PartidaAdivinador();
             partidaAdivinador.Show();
             this.Close();
+        }
+        private void BtnEnviarMensaje_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(tbChat.Text))
+            {
+                ListBoxItem lbiMensaje = new ListBoxItem();
+                lbiMensaje.Content = nombreJugador + ": " + tbChat.Text;
+                lbiMensaje.Foreground = Brushes.White;
+                lbiMensaje.FontSize = 14;
+                lbxChat.Items.Add(lbiMensaje);
+                tbChat.Text = "";
+
+            }
+        }
+
+        private void tbChat_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                if (!string.IsNullOrWhiteSpace(tbChat.Text))
+                {
+                    ListBoxItem lbiMensaje = new ListBoxItem();
+                    lbiMensaje.Content = nombreJugador + ": " + tbChat.Text;
+                    lbiMensaje.Foreground = Brushes.White;
+                    lbiMensaje.FontSize = 14;
+                    lbxChat.Items.Add(lbiMensaje);
+                    tbChat.Text = "";
+                }
+            }
         }
     }
 }

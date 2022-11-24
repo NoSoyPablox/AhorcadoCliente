@@ -27,6 +27,18 @@ namespace AhorcadoCliente
             InitializeComponent();
             cbIdioma.Text = App.idioma;
         }
+        private class Player
+        {
+            public int IdPlayer { get; set; }
+            public string NamePlayer { get; set; }
+            public string Lastname { get; set; }
+            public string Email { get; set; }
+            public string PasswordPlayer { get; set; }
+            public string Username { get; set; }
+            public int Points { get; set; }
+            public int GamesWin { get; set; }
+            public Nullable<int> IdAvatar { get; set; }
+        }
 
         private void BtnSalirClick(object sender, RoutedEventArgs e)
         {
@@ -35,7 +47,7 @@ namespace AhorcadoCliente
 
         private void BtnIniciarSesionClick(object sender, RoutedEventArgs e)
         {
-            ServiceReference1.Service1Client service1 = new ServiceReference1.Service1Client();
+            /*ServiceReference1.Service1Client service1 = new ServiceReference1.Service1Client();
             String correo = tbCorreo.Text;
             String password = "Unshowmas13";
             String AlertLogin = "Bienvenido";
@@ -50,8 +62,11 @@ namespace AhorcadoCliente
                 }
                 else {
                     MessageBox.Show(AlertLoginIncorrect);
-                }
-            
+                }*/
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.Show();
+            this.Close();
+
         }
 
         private void CbIdiomaSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -77,11 +92,29 @@ namespace AhorcadoCliente
             }
         }
 
-        private void btnRegistrarme_Click(object sender, RoutedEventArgs e)
+        private void btnRegistrarmeClick(object sender, RoutedEventArgs e)
         {
             PantallaRegistro pantallaRegistro = new PantallaRegistro();
             pantallaRegistro.Show();
             this.Close();
+        }
+
+        private void pswContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                pantallaPrincipal.Show();
+                this.Close();
+            }
+        }
+
+        private void btnJugarInvitado_Click(object sender, RoutedEventArgs e)
+        {
+            JugarComoInvitado jugarComoInvitado = new JugarComoInvitado();
+            jugarComoInvitado.Show();
+            this.Close();
+
         }
     }
 }

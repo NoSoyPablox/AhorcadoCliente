@@ -23,6 +23,10 @@ namespace AhorcadoCliente.Interfaces
         {
             InitializeComponent();
             cbIdioma.Text = App.idioma;
+            for (int i=1; i<100; i++)
+            {
+                cbEdad.Items.Add(i);
+            }
         }
 
         private void rbHombre_Checked(object sender, RoutedEventArgs e)
@@ -57,6 +61,7 @@ namespace AhorcadoCliente.Interfaces
 
         private void btnRegistrarme_Click(object sender, RoutedEventArgs e)
         {
+            int numEdad = cbEdad.SelectedIndex + 1;
             Console.WriteLine(pswContraseña.Password.ToString());
             if (pswContraseña.Password.ToString() == pswRepetirContraseña.Password.ToString())
             {
@@ -68,6 +73,7 @@ namespace AhorcadoCliente.Interfaces
                 Console.WriteLine("No coincide man :C");
                 
             }
+            Console.WriteLine("Edad introducida:" +numEdad);
         }
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)

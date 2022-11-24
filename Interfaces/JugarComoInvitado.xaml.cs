@@ -15,17 +15,16 @@ using System.Windows.Shapes;
 namespace AhorcadoCliente.Interfaces
 {
     /// <summary>
-    /// Lógica de interacción para PantallaPrincipal.xaml
+    /// Lógica de interacción para JugarComoInvitado.xaml
     /// </summary>
-    public partial class PantallaPrincipal : Window
+    public partial class JugarComoInvitado : Window
     {
-        public PantallaPrincipal()
+        public JugarComoInvitado()
         {
             InitializeComponent();
             cbIdioma.Text = App.idioma;
         }
 
-        private Player player = new Player();
         private class Player
         {
             public int IdPlayer { get; set; }
@@ -38,22 +37,11 @@ namespace AhorcadoCliente.Interfaces
             public int GamesWin { get; set; }
             public Nullable<int> IdAvatar { get; set; }
         }
-        private void BtnCerrarSesionClick(object sender, RoutedEventArgs e)
+
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
             InicioDeSesion inicioDeSesion = new InicioDeSesion();
             inicioDeSesion.Show();
-            this.Close();
-        }
-
-        private void BtnJugarClick(object sender, RoutedEventArgs e)
-        {
-            PantallaJugar pantallaJugar = new PantallaJugar();
-            pantallaJugar.Show();
-            this.Close();
-        }
-
-        private void BtnSalirClick(object sender, RoutedEventArgs e)
-        {
             this.Close();
         }
 
@@ -62,30 +50,36 @@ namespace AhorcadoCliente.Interfaces
             if (cbIdioma.SelectedItem == cbiEspañol && App.idioma != "Español")
             {
                 App.IdiomaEspañol();
-                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-                pantallaPrincipal.cbIdioma.Text = "Español";
-                pantallaPrincipal.Show();
+                JugarComoInvitado jugarComoInvitado = new JugarComoInvitado();
+                jugarComoInvitado.cbIdioma.Text = "Español";
+                jugarComoInvitado.Show();
                 this.Close();
             }
             if (cbIdioma.SelectedItem == cbiIngles && App.idioma != "English")
             {
                 App.IdiomaIngles();
-                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-                pantallaPrincipal.cbIdioma.Text = "English";
-                pantallaPrincipal.Show();
+                JugarComoInvitado jugarComoInvitado = new JugarComoInvitado();
+                jugarComoInvitado.cbIdioma.Text = "English";
+                jugarComoInvitado.Show();
                 this.Close();
             }
         }
 
-        private void btnInformacion_Click(object sender, RoutedEventArgs e)
+        private void btnJugar_Click(object sender, RoutedEventArgs e)
         {
-            InformacionUsuario informacionUsuario = new InformacionUsuario();
-            informacionUsuario.Show();
-            this.Close();
-        }
-        private void recibirJugador(Player player)
-        {
-            this.player = player;
+            if (!string.IsNullOrWhiteSpace(tbUsuario.Text))
+            {
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                Player player = new Player();
+                player.Username = tbUsuario.Text;
+                //pantallaPrincipal.recibirJugador();
+                pantallaPrincipal.Show();
+                this.Close();
+            }
+            else
+            {
+
+            }
         }
     }
 }

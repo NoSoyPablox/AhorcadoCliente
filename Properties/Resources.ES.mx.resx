@@ -126,8 +126,14 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="ChooseGameLanguage" xml:space="preserve">
+    <value>Elige el idioma de la partida</value>
+  </data>
   <data name="CreateRoom" xml:space="preserve">
     <value>Crear sala</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Contraseña actual</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Correo Electronico</value>
@@ -143,6 +149,16 @@
   </data>
   <data name="GameLanguage" xml:space="preserve">
     <value>Idioma de la partida:</value>
+  </data>
+  <data name="GuessInstruction" xml:space="preserve">
+    <value>Introduce la palabra con la que deseas intentar adivinar</value>
+  </data>
+  <data name="GuessPlayer" xml:space="preserve">
+    <value>¿No quieres una cuenta?
+Juega como invitado</value>
+  </data>
+  <data name="GuessPlayMessage" xml:space="preserve">
+    <value>Este usuario será temporal por el tiempo que juegue en esta sesión.</value>
   </data>
   <data name="GuessWord" xml:space="preserve">
     <value>Adivinar palabra</value>
@@ -171,11 +187,20 @@
   <data name="LogOut" xml:space="preserve">
     <value>Cerrar Sesion</value>
   </data>
+  <data name="MakeChanges" xml:space="preserve">
+    <value>Hacer cambios</value>
+  </data>
   <data name="Male" xml:space="preserve">
     <value>Hombre</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nombre</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nueva contraseña</value>
+  </data>
+  <data name="Or" xml:space="preserve">
+    <value>O</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Contraseña</value>
@@ -183,14 +208,27 @@
   <data name="Play" xml:space="preserve">
     <value>Jugar</value>
   </data>
+  <data name="PlayAsGuess" xml:space="preserve">
+    <value>Jugar como invitado</value>
+  </data>
   <data name="Register_Button" xml:space="preserve">
     <value>Registrar</value>
   </data>
   <data name="RepeatPasword" xml:space="preserve">
     <value>Repetir contraseña</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>* Requerido</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Guardar cambios</value>
+  </data>
   <data name="Sex" xml:space="preserve">
     <value>Sexo</value>
+  </data>
+  <data name="SignUpMessage" xml:space="preserve">
+    <value>¿No tienes una cuenta?
+Crea una a continuación</value>
   </data>
   <data name="Spanish" xml:space="preserve">
     <value>Español</value>

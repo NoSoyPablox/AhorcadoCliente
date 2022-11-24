@@ -57,6 +57,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Interfaces\AdivinarPalabra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\ElegirIdioma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\ElegirPalabra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\InformacionUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Interfaces\InicioDeSesion.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,10 +86,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\AdivinarPalabra.xaml.cs">
+      <DependentUpon>AdivinarPalabra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ElegirIdioma.xaml.cs">
+      <DependentUpon>ElegirIdioma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ElegirPalabra.xaml.cs">
+      <DependentUpon>ElegirPalabra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\InformacionUsuario.xaml.cs">
+      <DependentUpon>InformacionUsuario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\InicioDeSesion.xaml.cs">
       <DependentUpon>InicioDeSesion.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Interfaces\JugarComoInvitado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Interfaces\PantallaJugar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -104,6 +136,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\JugarComoInvitado.xaml.cs">
+      <DependentUpon>JugarComoInvitado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\PantallaJugar.xaml.cs">
       <DependentUpon>PantallaJugar.xaml</DependentUpon>
     </Compile>
@@ -195,6 +230,33 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\Wondering.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\Megaphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Megaphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\Alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\Timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\Images\GuessPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\GuessPlayer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -35,15 +35,16 @@ namespace AhorcadoCliente.Interfaces
         private void BtnUnirseClick(object sender, RoutedEventArgs e)
         {
             PantallaUnirsePartida pantallaUnirsePartida = new PantallaUnirsePartida();
+            pantallaUnirsePartida.recibirPantallaAnterior(this);
             pantallaUnirsePartida.Show();
-
-            //this.Close();
+            
+            this.IsEnabled = false;
         }
 
         private void BtnJugarClick(object sender, RoutedEventArgs e)
         {
-            SalaDeEsperaAnfitrion salaDeEsperaAnfitrion = new SalaDeEsperaAnfitrion();
-            salaDeEsperaAnfitrion.Show();
+            ElegirIdioma elegirIdioma = new ElegirIdioma();
+            elegirIdioma.Show();
             this.Close();
         }
         private void CbIdiomaSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -64,6 +65,13 @@ namespace AhorcadoCliente.Interfaces
                 pantallaJugar.Show();
                 this.Close();
             }
+        }
+
+        private void btnInformacion_Click(object sender, RoutedEventArgs e)
+        {
+            InformacionUsuario informacionUsuario = new InformacionUsuario();
+            informacionUsuario.Show();
+            this.Close();
         }
     }
 }

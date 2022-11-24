@@ -1,0 +1,26 @@
+﻿<Window x:Class="AhorcadoCliente.Interfaces.AdivinarPalabra"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AhorcadoCliente.Interfaces"
+        xmlns:p ="clr-namespace:AhorcadoCliente.Properties"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Title="AdivinarPalabra" Height="250" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle ="None"
+        >
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF24444D" Offset="1"/>
+                <GradientStop Color="#FF5F448F"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="tbCodigoPartida" HorizontalAlignment="Left" Height="50" Margin="31,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="32" FontWeight="Bold" TextDecorations="{x:Null}"/>
+        <Button x:Name="btnAdivinar" Content="{x:Static p:Resources.GuessWord}" HorizontalAlignment="Left" Margin="331,161,0,0" VerticalAlignment="Top" Width="102" Height="30"/>
+        <Button x:Name="btnCancelar" Content="{x:Static p:Resources.Cancel}" HorizontalAlignment="Left" Margin="461,161,0,0" VerticalAlignment="Top" Width="102" Height="30" Click="btnCancelar_Click"/>
+        <Label x:Name="lbInstruccionAdivinar" Content="{x:Static p:Resources.GuessInstruction}" HorizontalAlignment="Left" Margin="31,44,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Width="514"/>
+    </Grid>
+</Window>

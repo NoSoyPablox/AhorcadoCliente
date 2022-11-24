@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,39 +11,24 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Timers;
 
 namespace AhorcadoCliente.Interfaces
 {
     /// <summary>
-    /// Lógica de interacción para PartidaAdivinador.xaml
+    /// Lógica de interacción para ElegirIdioma.xaml
     /// </summary>
-    public partial class PartidaAdivinador : Window
+    public partial class ElegirIdioma : Window
     {
-
-        public PartidaAdivinador()
+        public ElegirIdioma()
         {
             InitializeComponent();
         }
 
-        private void BtnAbandonarClick(object sender, RoutedEventArgs e)
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
             PantallaJugar pantallaJugar = new PantallaJugar();
             pantallaJugar.Show();
             this.Close();
-        }
-
-        private void btnAdivinar_Click(object sender, RoutedEventArgs e)
-        {
-            AdivinarPalabra adivinarPalabra= new AdivinarPalabra();
-            adivinarPalabra.recibirPartida(this);
-            adivinarPalabra.Show();
-            this.IsEnabled = false;
-        }
-
-        private void iniciarTurno()
-        {
-
         }
     }
 }

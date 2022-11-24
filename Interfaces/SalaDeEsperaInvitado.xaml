@@ -10,6 +10,7 @@
         ResizeMode="NoResize"
         Title="SalaDeEsperaInvitado" Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
+        WindowStyle ="None"
         >
     <Grid>
         <Grid.Background>
@@ -25,9 +26,7 @@
         </ListBox>
         <Label x:Name="lbIdioma" Content="{x:Static q:App.idioma}" HorizontalAlignment="Left" Margin="645,31,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
         <Label x:Name="lbEsperandoAnfitrion" Content="{x:Static p:Resources.WaitingGameHost}" HorizontalAlignment="Left" Margin="506,185,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18"/>
-        <ListBox x:Name="lbxChat" HorizontalAlignment="Left" Height="110" Margin="28,249,0,0" VerticalAlignment="Top" Width="481" Background="#FF404040" BorderBrush="White">
-            <ListBoxItem Content="Hola mundo" Foreground="White" FontSize="14"/>
-        </ListBox>
+        <ListBox x:Name="lbxChat" HorizontalAlignment="Left" Height="110" Margin="28,249,0,0" VerticalAlignment="Top" Width="481" Background="#FF404040" BorderBrush="White"/>
         <TextBox x:Name="tbChat" HorizontalAlignment="Left" Height="35" Margin="28,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393" FontWeight="Bold" FontSize="14" KeyDown="tbChat_KeyDown"/>
         <Button x:Name="btnEnviarMensaje" Content="Enviar -&gt;" HorizontalAlignment="Left" Margin="429,359,0,0" VerticalAlignment="Top" Width="80" Height="35" Click="BtnEnviarMensaje_Click"/>
 

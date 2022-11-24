@@ -88,11 +88,29 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Elige el idioma de la partida.
+        /// </summary>
+        public static string ChooseGameLanguage {
+            get {
+                return ResourceManager.GetString("ChooseGameLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Crear sala.
         /// </summary>
         public static string CreateRoom {
             get {
                 return ResourceManager.GetString("CreateRoom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña actual.
+        /// </summary>
+        public static string CurrentPassword {
+            get {
+                return ResourceManager.GetString("CurrentPassword", resourceCulture);
             }
         }
         
@@ -138,6 +156,34 @@ namespace AhorcadoCliente.Properties {
         public static string GameLanguage {
             get {
                 return ResourceManager.GetString("GameLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Introduce la palabra con la que deseas intentar adivinar.
+        /// </summary>
+        public static string GuessInstruction {
+            get {
+                return ResourceManager.GetString("GuessInstruction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿No quieres una cuenta?
+        ///Juega como invitado.
+        /// </summary>
+        public static string GuessPlayerMessage {
+            get {
+                return ResourceManager.GetString("GuessPlayerMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Este usuario será temporal por el tiempo que juegue en esta sesión..
+        /// </summary>
+        public static string GuessPlayMessage {
+            get {
+                return ResourceManager.GetString("GuessPlayMessage", resourceCulture);
             }
         }
         
@@ -223,6 +269,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Hacer cambios.
+        /// </summary>
+        public static string MakeChanges {
+            get {
+                return ResourceManager.GetString("MakeChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Hombre.
         /// </summary>
         public static string Male {
@@ -237,6 +292,24 @@ namespace AhorcadoCliente.Properties {
         public static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nueva contraseña.
+        /// </summary>
+        public static string NewPassword {
+            get {
+                return ResourceManager.GetString("NewPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a O.
+        /// </summary>
+        public static string Or {
+            get {
+                return ResourceManager.GetString("Or", resourceCulture);
             }
         }
         
@@ -259,6 +332,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Jugar como invitado.
+        /// </summary>
+        public static string PlayAsGuess {
+            get {
+                return ResourceManager.GetString("PlayAsGuess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Registrar.
         /// </summary>
         public static string Register_Button {
@@ -277,11 +359,39 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a * Requerido.
+        /// </summary>
+        public static string Required {
+            get {
+                return ResourceManager.GetString("Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guardar cambios.
+        /// </summary>
+        public static string SaveChanges {
+            get {
+                return ResourceManager.GetString("SaveChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Sexo.
         /// </summary>
         public static string Sex {
             get {
                 return ResourceManager.GetString("Sex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿No tienes una cuenta?
+        ///Crea una a continuación.
+        /// </summary>
+        public static string SignUpMessage {
+            get {
+                return ResourceManager.GetString("SignUpMessage", resourceCulture);
             }
         }
         
