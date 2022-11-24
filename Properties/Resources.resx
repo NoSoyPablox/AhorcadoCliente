@@ -126,6 +126,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="ChooseGameLanguage" xml:space="preserve">
+    <value>Elige el idioma de la partida</value>
+  </data>
   <data name="CreateRoom" xml:space="preserve">
     <value>Crear sala</value>
   </data>
@@ -153,6 +156,9 @@
   <data name="GuessPlayerMessage" xml:space="preserve">
     <value>¿No quieres una cuenta?
 Juega como invitado</value>
+  </data>
+  <data name="GuessPlayMessage" xml:space="preserve">
+    <value>Este usuario será temporal por el tiempo que juegue en esta sesión.</value>
   </data>
   <data name="GuessWord" xml:space="preserve">
     <value>Adivinar palabra</value>

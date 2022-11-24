@@ -18,5 +18,6 @@
                 <GradientStop Color="#FF473870" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+        <Label x:Name="lbElegirPalabra" Content="Elige la palabra con la que deseas jugar" HorizontalAlignment="Left" Margin="240,26,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16"/>
     </Grid>
 </Window>

@@ -43,8 +43,8 @@ namespace AhorcadoCliente.Interfaces
 
         private void BtnJugarClick(object sender, RoutedEventArgs e)
         {
-            SalaDeEsperaAnfitrion salaDeEsperaAnfitrion = new SalaDeEsperaAnfitrion();
-            salaDeEsperaAnfitrion.Show();
+            ElegirIdioma elegirIdioma = new ElegirIdioma();
+            elegirIdioma.Show();
             this.Close();
         }
         private void CbIdiomaSelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -12,16 +12,23 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace AhorcadoCliente.Interfaces.Images
+namespace AhorcadoCliente.Interfaces
 {
     /// <summary>
-    /// Lógica de interacción para JugarComoInvitado.xaml
+    /// Lógica de interacción para ElegirIdioma.xaml
     /// </summary>
-    public partial class JugarComoInvitado : Window
+    public partial class ElegirIdioma : Window
     {
-        public JugarComoInvitado()
+        public ElegirIdioma()
         {
             InitializeComponent();
+        }
+
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        {
+            PantallaJugar pantallaJugar = new PantallaJugar();
+            pantallaJugar.Show();
+            this.Close();
         }
     }
 }

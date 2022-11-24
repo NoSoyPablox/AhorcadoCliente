@@ -88,6 +88,15 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Elige el idioma de la partida.
+        /// </summary>
+        public static string ChooseGameLanguage {
+            get {
+                return ResourceManager.GetString("ChooseGameLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Crear sala.
         /// </summary>
         public static string CreateRoom {
@@ -166,6 +175,15 @@ namespace AhorcadoCliente.Properties {
         public static string GuessPlayerMessage {
             get {
                 return ResourceManager.GetString("GuessPlayerMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Este usuario será temporal por el tiempo que juegue en esta sesión..
+        /// </summary>
+        public static string GuessPlayMessage {
+            get {
+                return ResourceManager.GetString("GuessPlayMessage", resourceCulture);
             }
         }
         

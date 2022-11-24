@@ -61,11 +61,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Interfaces\ElegirPalabra.xaml">
+    <Page Include="Interfaces\ElegirIdioma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Interfaces\Images\JugarComoInvitado.xaml">
+    <Page Include="Interfaces\ElegirPalabra.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -89,11 +89,11 @@
     <Compile Include="Interfaces\AdivinarPalabra.xaml.cs">
       <DependentUpon>AdivinarPalabra.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\ElegirIdioma.xaml.cs">
+      <DependentUpon>ElegirIdioma.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\ElegirPalabra.xaml.cs">
       <DependentUpon>ElegirPalabra.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaces\Images\JugarComoInvitado.xaml.cs">
-      <DependentUpon>JugarComoInvitado.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\InformacionUsuario.xaml.cs">
       <DependentUpon>InformacionUsuario.xaml</DependentUpon>
@@ -102,6 +102,10 @@
       <DependentUpon>InicioDeSesion.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Interfaces\JugarComoInvitado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Interfaces\PantallaJugar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +136,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\JugarComoInvitado.xaml.cs">
+      <DependentUpon>JugarComoInvitado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\PantallaJugar.xaml.cs">
       <DependentUpon>PantallaJugar.xaml</DependentUpon>
     </Compile>

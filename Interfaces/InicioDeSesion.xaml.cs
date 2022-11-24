@@ -96,5 +96,13 @@ namespace AhorcadoCliente
                 this.Close();
             }
         }
+
+        private void btnJugarInvitado_Click(object sender, RoutedEventArgs e)
+        {
+            JugarComoInvitado jugarComoInvitado = new JugarComoInvitado();
+            jugarComoInvitado.Show();
+            this.Close();
+
+        }
     }
 }

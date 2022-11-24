@@ -23,5 +23,10 @@ namespace AhorcadoCliente.Interfaces
         {
             InitializeComponent();
         }
+
+        private void btnEspanol_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
