@@ -27,7 +27,7 @@ namespace AhorcadoCliente
             InitializeComponent();
             cbIdioma.Text = App.idioma;
         }
-        private class Player
+        public class Player
         {
             public int IdPlayer { get; set; }
             public string NamePlayer { get; set; }
@@ -47,25 +47,30 @@ namespace AhorcadoCliente
 
         private void BtnIniciarSesionClick(object sender, RoutedEventArgs e)
         {
-            /*ServiceReference1.Service1Client service1 = new ServiceReference1.Service1Client();
+            ServiceReference1.PlayerClient service1 = new ServiceReference1.PlayerClient();
             String correo = tbCorreo.Text;
             String password = "Unshowmas13";
-            String AlertLogin = "Bienvenido";
             String AlertLoginIncorrect = "Usuario o contraseña incorrecta";
             bool respuesta;
                 respuesta = service1.Login(correo, password);
-                if (respuesta == true) {
-                    MessageBox.Show(AlertLogin);
+                if (respuesta == true) 
+                {
+                    Player playerRecibido = new Player();
+                    playerRecibido.NamePlayer = service1.recuperarNombreJugador(correo, password);
+                    playerRecibido.IdPlayer = service1.recuperarIdPlayer(correo, password);
+                    playerRecibido.Username = service1.recuperarUsername(correo, password);
+                    playerRecibido.Points = service1.recuperarPoints(correo, password);
+                    playerRecibido.GamesWin = service1.recuperarGamesWin(correo, password);
+                    playerRecibido.Email = correo;
+                    playerRecibido.PasswordPlayer = password;
                     PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                    pantallaPrincipal.recibirJUgador(playerRecibido);
                     pantallaPrincipal.Show();
                     this.Close();
                 }
                 else {
                     MessageBox.Show(AlertLoginIncorrect);
-                }*/
-            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-            pantallaPrincipal.Show();
-            this.Close();
+                }
 
         }
 

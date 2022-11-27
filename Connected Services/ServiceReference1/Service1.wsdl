@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
-  <wsp:Policy wsu:Id="NetTcpBinding_IService1_policy">
+  <wsp:Policy wsu:Id="NetTcpBinding_IPlayer_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
@@ -14,33 +14,103 @@
       <xsd:import schemaLocation="http://localhost:8082/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IService1_primerMetodo_InputMessage">
+  <wsdl:message name="IPlayer_primerMetodo_InputMessage">
     <wsdl:part name="parameters" element="tns:primerMetodo" />
   </wsdl:message>
-  <wsdl:message name="IService1_primerMetodo_OutputMessage">
+  <wsdl:message name="IPlayer_primerMetodo_OutputMessage">
     <wsdl:part name="parameters" element="tns:primerMetodoResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_Login_InputMessage">
+  <wsdl:message name="IPlayer_Login_InputMessage">
     <wsdl:part name="parameters" element="tns:Login" />
   </wsdl:message>
-  <wsdl:message name="IService1_Login_OutputMessage">
+  <wsdl:message name="IPlayer_Login_OutputMessage">
     <wsdl:part name="parameters" element="tns:LoginResponse" />
   </wsdl:message>
-  <wsdl:portType name="IService1">
+  <wsdl:message name="IPlayer_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_UpdateDataPlayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDataPlayer" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_UpdateDataPlayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDataPlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarNombreJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarNombreJugador" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarNombreJugador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarNombreJugadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarIdPlayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarIdPlayer" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarIdPlayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarIdPlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarUsername_InputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarUsername" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarUsername_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarUsernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarPoints_InputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarPoints" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarPoints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarGamesWin_InputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarGamesWin" />
+  </wsdl:message>
+  <wsdl:message name="IPlayer_recuperarGamesWin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recuperarGamesWinResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPlayer">
     <wsdl:operation name="primerMetodo">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/primerMetodo" message="tns:IService1_primerMetodo_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/primerMetodoResponse" message="tns:IService1_primerMetodo_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/primerMetodo" message="tns:IPlayer_primerMetodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/primerMetodoResponse" message="tns:IPlayer_primerMetodo_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Login">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/Login" message="tns:IPlayer_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/LoginResponse" message="tns:IPlayer_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/Register" message="tns:IPlayer_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/RegisterResponse" message="tns:IPlayer_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataPlayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/UpdateDataPlayer" message="tns:IPlayer_UpdateDataPlayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/UpdateDataPlayerResponse" message="tns:IPlayer_UpdateDataPlayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recuperarNombreJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/recuperarNombreJugador" message="tns:IPlayer_recuperarNombreJugador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/recuperarNombreJugadorResponse" message="tns:IPlayer_recuperarNombreJugador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recuperarIdPlayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/recuperarIdPlayer" message="tns:IPlayer_recuperarIdPlayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/recuperarIdPlayerResponse" message="tns:IPlayer_recuperarIdPlayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recuperarUsername">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/recuperarUsername" message="tns:IPlayer_recuperarUsername_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/recuperarUsernameResponse" message="tns:IPlayer_recuperarUsername_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recuperarPoints">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/recuperarPoints" message="tns:IPlayer_recuperarPoints_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/recuperarPointsResponse" message="tns:IPlayer_recuperarPoints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recuperarGamesWin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlayer/recuperarGamesWin" message="tns:IPlayer_recuperarGamesWin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlayer/recuperarGamesWinResponse" message="tns:IPlayer_recuperarGamesWin_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="NetTcpBinding_IService1" type="tns:IService1">
-    <wsp:PolicyReference URI="#NetTcpBinding_IService1_policy" />
+  <wsdl:binding name="NetTcpBinding_IPlayer" type="tns:IPlayer">
+    <wsp:PolicyReference URI="#NetTcpBinding_IPlayer_policy" />
     <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
     <wsdl:operation name="primerMetodo">
-      <soap12:operation soapAction="http://tempuri.org/IService1/primerMetodo" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/primerMetodo" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -49,7 +119,70 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Login">
-      <soap12:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/Register" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataPlayer">
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/UpdateDataPlayer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperarNombreJugador">
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/recuperarNombreJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperarIdPlayer">
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/recuperarIdPlayer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperarUsername">
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/recuperarUsername" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperarPoints">
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/recuperarPoints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recuperarGamesWin">
+      <soap12:operation soapAction="http://tempuri.org/IPlayer/recuperarGamesWin" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -59,7 +192,7 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Service1">
-    <wsdl:port name="NetTcpBinding_IService1" binding="tns:NetTcpBinding_IService1">
+    <wsdl:port name="NetTcpBinding_IPlayer" binding="tns:NetTcpBinding_IPlayer">
       <soap12:address location="net.tcp://localhost:8081/WCF" />
       <wsa10:EndpointReference>
         <wsa10:Address>net.tcp://localhost:8081/WCF</wsa10:Address>

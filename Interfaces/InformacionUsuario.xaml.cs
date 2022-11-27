@@ -27,7 +27,7 @@ namespace AhorcadoCliente.Interfaces
             btnGuardarCambios.IsEnabled= false;
             tbNombre.IsEnabled= false;
             tbUsuario.IsEnabled= false;
-            cbEdad.IsEnabled= false;
+            tbCorreo.IsEnabled = false;
             lbContrasenaActual.Opacity = 0;
             lbNuevaContrasena.Opacity = 0;
             lbRepetirContrasena.Opacity = 0;
@@ -37,31 +37,44 @@ namespace AhorcadoCliente.Interfaces
             pswNuevaContrasena.IsEnabled= false;
             pswRepetirContrasena.IsEnabled = false;
             pswcontrasenaActual.IsEnabled= false;
-            rbHombre.IsEnabled= false;
-            rbMujer.IsEnabled= false;
             reContrasenas.Opacity = 0;
             imgAlerta.Opacity = 0;
             lbRequerido.Opacity = 0;
+        }
+        public Player recibirPlayer = new Player();
 
-            for (int i = 1; i < 100; i++)
-            {
-                cbEdad.Items.Add(i);
-            }
+        public class Player
+        {
+            public int IdPlayer { get; set; }
+            public string NamePlayer { get; set; }
+            public string Lastname { get; set; }
+            public string Email { get; set; }
+            public string PasswordPlayer { get; set; }
+            public string Username { get; set; }
+            public int Points { get; set; }
+            public int GamesWin { get; set; }
+            public Nullable<int> IdAvatar { get; set; }
         }
 
-        private void rbHombre_Checked(object sender, RoutedEventArgs e)
+        public void recibirJUgador(PantallaPrincipal.Player player)
         {
-            rbMujer.IsChecked = false;
-        }
-
-        private void rbMujer_Checked(object sender, RoutedEventArgs e)
-        {
-            rbHombre.IsChecked = false;
+            recibirPlayer.IdPlayer = player.IdPlayer;
+            recibirPlayer.NamePlayer = player.NamePlayer;
+            recibirPlayer.PasswordPlayer = player.PasswordPlayer;
+            recibirPlayer.Email = player.Email;
+            recibirPlayer.GamesWin = player.GamesWin;
+            recibirPlayer.Points = player.Points;
+            recibirPlayer.Username = player.Username;
+            tbNombre.Text = recibirPlayer.NamePlayer;
+            tbCorreo.Text = recibirPlayer.Email;
+            tbUsuario.Text = recibirPlayer.Username;
+             
         }
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.recibirJUgadorVolver(recibirPlayer);
             pantallaPrincipal.Show();
             this.Close();
         }
@@ -93,7 +106,7 @@ namespace AhorcadoCliente.Interfaces
             btnGuardarCambios.IsEnabled = true;
             tbNombre.IsEnabled = true;
             tbUsuario.IsEnabled = true;
-            cbEdad.IsEnabled = true;
+            tbCorreo.IsEnabled = true;
             pswNuevaContrasena.IsEnabled = true;
             pswRepetirContrasena.IsEnabled = true;
             pswcontrasenaActual.IsEnabled = true;
@@ -103,24 +116,52 @@ namespace AhorcadoCliente.Interfaces
             pswcontrasenaActual.Opacity = 1;
             pswNuevaContrasena.Opacity = 1;
             pswRepetirContrasena.Opacity = 1;
-            rbHombre.IsEnabled = true;
-            rbMujer.IsEnabled = true;
             reContrasenas.Opacity = 1;
             imgAlerta.Opacity = 1;
             lbRequerido.Opacity = 1;
+            string mensaje = "Si no desea cambiar la contraseña, introduzca la misma contraseña en los tres campos";
+            string hola = "Aviso de contraseña";
+            MessageBox.Show(mensaje, hola);
         }
 
         private void btnGuardarCambios_Click(object sender, RoutedEventArgs e)
         {
+            int respuesta = 0;
+            string password = pswNuevaContrasena.Password.ToString();
             if (pswNuevaContrasena.Password.ToString() == pswRepetirContrasena.Password.ToString())
             {
-                Console.WriteLine("Si coincide");
-
+                if (pswcontrasenaActual.Password.ToString() == recibirPlayer.PasswordPlayer)
+                {
+                    ServiceReference1.PlayerClient service1 = new ServiceReference1.PlayerClient();
+                    respuesta = service1.UpdateDataPlayer(tbNombre.Text, tbCorreo.Text, password, tbUsuario.Text);
+                    if (respuesta != 0)
+                    {
+                        recibirPlayer.Email = tbCorreo.Text;
+                        recibirPlayer.NamePlayer = tbNombre.Text;
+                        recibirPlayer.PasswordPlayer = password;
+                        recibirPlayer.Username = tbUsuario.Text;
+                        MessageBox.Show("Actualización exitosa");
+                        PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                        pantallaPrincipal.recibirJUgadorVolver(recibirPlayer);
+                        pantallaPrincipal.Show();
+                        this.Close();   
+                    }
+                    else 
+                    {
+                        MessageBox.Show("La actualización no se ha actualizado correctamente, intentelo más tarde");
+                        PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                        pantallaPrincipal.recibirJUgadorVolver(recibirPlayer);
+                        pantallaPrincipal.Show();
+                        this.Close();
+                    }
+                }
+                else {
+                    MessageBox.Show("Las contraseñas actual es incorrecta");
+                }
             }
             else
             {
-                Console.WriteLine("No coincide man :C");
-
+                MessageBox.Show("Las contraseña nueva y la confirmación, no coinciden");
             }
         }
     }

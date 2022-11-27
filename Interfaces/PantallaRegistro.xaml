@@ -19,18 +19,14 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label x:Name="lbNombre" Content="{x:Static p:Resources.Name}" HorizontalAlignment="Left" Margin="150,34,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
-        <Label x:Name="lbEdad" Content="{x:Static p:Resources.Age}" HorizontalAlignment="Left" Margin="150,90,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
-        <Label x:Name="lbSexo" Content="{x:Static p:Resources.Sex}" HorizontalAlignment="Left" Margin="150,154,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
-        <Label x:Name="lbUsuario" Content="{x:Static p:Resources.User}" HorizontalAlignment="Left" Margin="150,206,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
-        <Label x:Name="lbContraseña" Content="{x:Static p:Resources.Password}" HorizontalAlignment="Left" Margin="150,262,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
-        <Label x:Name="lbRepetirContraseña" Content="{x:Static p:Resources.RepeatPassword}" HorizontalAlignment="Left" Margin="150,322,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label x:Name="lbUsuario" Content="{x:Static p:Resources.User}" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
+        <Label x:Name="lbContraseña" Content="{x:Static p:Resources.Password}" HorizontalAlignment="Left" Margin="150,200,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
+        <Label x:Name="lbRepetirContraseña" Content="{x:Static p:Resources.RepeatPassword}" HorizontalAlignment="Left" Margin="150,250,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        
         <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="22" Margin="246,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cbEdad" HorizontalAlignment="Left" Margin="246,101,0,0" VerticalAlignment="Top" Width="120"/>
-        <RadioButton x:Name="rbHombre" Content="{x:Static p:Resources.Male}" HorizontalAlignment="Left" Margin="246,164,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" Checked="rbHombre_Checked"/>
-        <RadioButton x:Name="rbMujer" Content="{x:Static p:Resources.Female}" HorizontalAlignment="Left" Margin="404,164,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" Checked="rbMujer_Checked" Width="103"/>
-        <TextBox x:Name="tbUsuario" HorizontalAlignment="Left" Height="22" Margin="246,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="pswContraseña" HorizontalAlignment="Left" Margin="278,270,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
-        <PasswordBox x:Name="pswRepetirContraseña" HorizontalAlignment="Left" Margin="352,330,0,0" VerticalAlignment="Top" Width="122" Height="22"/>
+        <TextBox x:Name="tbUsuario" HorizontalAlignment="Left" Height="22" Margin="246,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="pswContraseña" HorizontalAlignment="Left" Margin="278,210,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
+        <PasswordBox x:Name="pswRepetirContraseña" HorizontalAlignment="Left" Margin="352,260,0,0" VerticalAlignment="Top" Width="122" Height="22"/>
         <Label x:Name="lbIdioma" Content="{x:Static p:Resources.Language}" HorizontalAlignment="Left" Margin="490,14,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
         <ComboBox x:Name="cbIdioma" HorizontalAlignment="Left" Margin="598,26,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbIdioma_SelectionChanged">
             <ComboBoxItem x:Name="cbiEspañol" Content="{x:Static p:Resources.Spanish}"/>
@@ -38,5 +34,7 @@
         </ComboBox>
         <Button x:Name="btnRegistrarme" Content="{x:Static p:Resources.Register_Button}" HorizontalAlignment="Left" Margin="262,376,0,0" VerticalAlignment="Top" Width="75" Click="btnRegistrarme_Click"/>
         <Button x:Name="btnVolver" Content="{x:Static p:Resources.Back}" HorizontalAlignment="Left" Margin="404,376,0,0" VerticalAlignment="Top" Width="74" Click="btnVolver_Click"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="150,95,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Margin="246,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="152" Height="27"/>
     </Grid>
 </Window>

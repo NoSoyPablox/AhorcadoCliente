@@ -12,46 +12,88 @@ namespace AhorcadoCliente.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
-    public interface IService1 {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IPlayer")]
+    public interface IPlayer {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/primerMetodo", ReplyAction="http://tempuri.org/IService1/primerMetodoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/primerMetodo", ReplyAction="http://tempuri.org/IPlayer/primerMetodoResponse")]
         bool primerMetodo();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/primerMetodo", ReplyAction="http://tempuri.org/IService1/primerMetodoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/primerMetodo", ReplyAction="http://tempuri.org/IPlayer/primerMetodoResponse")]
         System.Threading.Tasks.Task<bool> primerMetodoAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Login", ReplyAction="http://tempuri.org/IService1/LoginResponse")]
-        bool Login(string Email, string Password);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/Login", ReplyAction="http://tempuri.org/IPlayer/LoginResponse")]
+        bool Login(string email, string password);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Login", ReplyAction="http://tempuri.org/IService1/LoginResponse")]
-        System.Threading.Tasks.Task<bool> LoginAsync(string Email, string Password);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/Login", ReplyAction="http://tempuri.org/IPlayer/LoginResponse")]
+        System.Threading.Tasks.Task<bool> LoginAsync(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/Register", ReplyAction="http://tempuri.org/IPlayer/RegisterResponse")]
+        int Register(string namePlayer, string email, string password, string username, int points, int gamesWin);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/Register", ReplyAction="http://tempuri.org/IPlayer/RegisterResponse")]
+        System.Threading.Tasks.Task<int> RegisterAsync(string namePlayer, string email, string password, string username, int points, int gamesWin);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/UpdateDataPlayer", ReplyAction="http://tempuri.org/IPlayer/UpdateDataPlayerResponse")]
+        int UpdateDataPlayer(string namePlayer, string email, string password, string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/UpdateDataPlayer", ReplyAction="http://tempuri.org/IPlayer/UpdateDataPlayerResponse")]
+        System.Threading.Tasks.Task<int> UpdateDataPlayerAsync(string namePlayer, string email, string password, string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarNombreJugador", ReplyAction="http://tempuri.org/IPlayer/recuperarNombreJugadorResponse")]
+        string recuperarNombreJugador(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarNombreJugador", ReplyAction="http://tempuri.org/IPlayer/recuperarNombreJugadorResponse")]
+        System.Threading.Tasks.Task<string> recuperarNombreJugadorAsync(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarIdPlayer", ReplyAction="http://tempuri.org/IPlayer/recuperarIdPlayerResponse")]
+        int recuperarIdPlayer(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarIdPlayer", ReplyAction="http://tempuri.org/IPlayer/recuperarIdPlayerResponse")]
+        System.Threading.Tasks.Task<int> recuperarIdPlayerAsync(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarUsername", ReplyAction="http://tempuri.org/IPlayer/recuperarUsernameResponse")]
+        string recuperarUsername(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarUsername", ReplyAction="http://tempuri.org/IPlayer/recuperarUsernameResponse")]
+        System.Threading.Tasks.Task<string> recuperarUsernameAsync(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarPoints", ReplyAction="http://tempuri.org/IPlayer/recuperarPointsResponse")]
+        int recuperarPoints(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarPoints", ReplyAction="http://tempuri.org/IPlayer/recuperarPointsResponse")]
+        System.Threading.Tasks.Task<int> recuperarPointsAsync(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarGamesWin", ReplyAction="http://tempuri.org/IPlayer/recuperarGamesWinResponse")]
+        int recuperarGamesWin(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPlayer/recuperarGamesWin", ReplyAction="http://tempuri.org/IPlayer/recuperarGamesWinResponse")]
+        System.Threading.Tasks.Task<int> recuperarGamesWinAsync(string email, string password);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : AhorcadoCliente.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IPlayerChannel : AhorcadoCliente.ServiceReference1.IPlayer, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<AhorcadoCliente.ServiceReference1.IService1>, AhorcadoCliente.ServiceReference1.IService1 {
+    public partial class PlayerClient : System.ServiceModel.ClientBase<AhorcadoCliente.ServiceReference1.IPlayer>, AhorcadoCliente.ServiceReference1.IPlayer {
         
-        public Service1Client() {
+        public PlayerClient() {
         }
         
-        public Service1Client(string endpointConfigurationName) : 
+        public PlayerClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
+        public PlayerClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public PlayerClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public PlayerClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
@@ -63,12 +105,68 @@ namespace AhorcadoCliente.ServiceReference1 {
             return base.Channel.primerMetodoAsync();
         }
         
-        public bool Login(string Email, string Password) {
-            return base.Channel.Login(Email, Password);
+        public bool Login(string email, string password) {
+            return base.Channel.Login(email, password);
         }
         
-        public System.Threading.Tasks.Task<bool> LoginAsync(string Email, string Password) {
-            return base.Channel.LoginAsync(Email, Password);
+        public System.Threading.Tasks.Task<bool> LoginAsync(string email, string password) {
+            return base.Channel.LoginAsync(email, password);
+        }
+        
+        public int Register(string namePlayer, string email, string password, string username, int points, int gamesWin) {
+            return base.Channel.Register(namePlayer, email, password, username, points, gamesWin);
+        }
+        
+        public System.Threading.Tasks.Task<int> RegisterAsync(string namePlayer, string email, string password, string username, int points, int gamesWin) {
+            return base.Channel.RegisterAsync(namePlayer, email, password, username, points, gamesWin);
+        }
+        
+        public int UpdateDataPlayer(string namePlayer, string email, string password, string username) {
+            return base.Channel.UpdateDataPlayer(namePlayer, email, password, username);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateDataPlayerAsync(string namePlayer, string email, string password, string username) {
+            return base.Channel.UpdateDataPlayerAsync(namePlayer, email, password, username);
+        }
+        
+        public string recuperarNombreJugador(string email, string password) {
+            return base.Channel.recuperarNombreJugador(email, password);
+        }
+        
+        public System.Threading.Tasks.Task<string> recuperarNombreJugadorAsync(string email, string password) {
+            return base.Channel.recuperarNombreJugadorAsync(email, password);
+        }
+        
+        public int recuperarIdPlayer(string email, string password) {
+            return base.Channel.recuperarIdPlayer(email, password);
+        }
+        
+        public System.Threading.Tasks.Task<int> recuperarIdPlayerAsync(string email, string password) {
+            return base.Channel.recuperarIdPlayerAsync(email, password);
+        }
+        
+        public string recuperarUsername(string email, string password) {
+            return base.Channel.recuperarUsername(email, password);
+        }
+        
+        public System.Threading.Tasks.Task<string> recuperarUsernameAsync(string email, string password) {
+            return base.Channel.recuperarUsernameAsync(email, password);
+        }
+        
+        public int recuperarPoints(string email, string password) {
+            return base.Channel.recuperarPoints(email, password);
+        }
+        
+        public System.Threading.Tasks.Task<int> recuperarPointsAsync(string email, string password) {
+            return base.Channel.recuperarPointsAsync(email, password);
+        }
+        
+        public int recuperarGamesWin(string email, string password) {
+            return base.Channel.recuperarGamesWin(email, password);
+        }
+        
+        public System.Threading.Tasks.Task<int> recuperarGamesWinAsync(string email, string password) {
+            return base.Channel.recuperarGamesWinAsync(email, password);
         }
     }
 }

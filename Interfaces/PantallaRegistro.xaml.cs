@@ -23,20 +23,7 @@ namespace AhorcadoCliente.Interfaces
         {
             InitializeComponent();
             cbIdioma.Text = App.idioma;
-            for (int i=1; i<100; i++)
-            {
-                cbEdad.Items.Add(i);
-            }
-        }
-
-        private void rbHombre_Checked(object sender, RoutedEventArgs e)
-        {
-            rbMujer.IsChecked = false;
-        }
-
-        private void rbMujer_Checked(object sender, RoutedEventArgs e)
-        {
-            rbHombre.IsChecked = false;
+            
         }
 
         private void cbIdioma_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -61,19 +48,35 @@ namespace AhorcadoCliente.Interfaces
 
         private void btnRegistrarme_Click(object sender, RoutedEventArgs e)
         {
-            int numEdad = cbEdad.SelectedIndex + 1;
-            Console.WriteLine(pswContraseña.Password.ToString());
+            int respuesta = 0;
+            ServiceReference1.PlayerClient service = new ServiceReference1.PlayerClient();
+            string nombre = tbNombre.Text;
+            string usuarname = tbUsuario.Text;
+            string email = tbEmail.Text;
+            string password = pswContraseña.Password.ToString();
+            String AlertLogin = "Registro exitoso";
+            String AlertIncorrecto = "No se ha completado el registro de mner exitosa"; 
             if (pswContraseña.Password.ToString() == pswRepetirContraseña.Password.ToString())
             {
-                Console.WriteLine("Si coincide");
-                
+                respuesta = service.Register(nombre, email, password, usuarname, 0, 0);
+                if (respuesta != 0) {
+                    MessageBox.Show(AlertLogin);
+                    tbNombre.Clear();
+                    tbUsuario.Clear();
+                    tbEmail.Clear();
+                    pswContraseña.Clear();
+                    pswRepetirContraseña.Clear();
+                }
+                else
+                {
+                    MessageBox.Show(AlertIncorrecto);
+                }
             }
             else
             {
                 Console.WriteLine("No coincide man :C");
-                
             }
-            Console.WriteLine("Edad introducida:" +numEdad);
+            
         }
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)

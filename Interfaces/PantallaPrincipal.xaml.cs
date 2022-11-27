@@ -24,9 +24,9 @@ namespace AhorcadoCliente.Interfaces
             InitializeComponent();
             cbIdioma.Text = App.idioma;
         }
+        public Player recibirPlayer = new Player();
 
-        private Player player = new Player();
-        private class Player
+        public class Player
         {
             public int IdPlayer { get; set; }
             public string NamePlayer { get; set; }
@@ -38,6 +38,28 @@ namespace AhorcadoCliente.Interfaces
             public int GamesWin { get; set; }
             public Nullable<int> IdAvatar { get; set; }
         }
+
+        public void recibirJUgador(InicioDeSesion.Player player) {
+            recibirPlayer.IdPlayer = player.IdPlayer;
+            recibirPlayer.NamePlayer = player.NamePlayer;
+            recibirPlayer.PasswordPlayer = player.PasswordPlayer;
+            recibirPlayer.Email = player.Email;
+            recibirPlayer.GamesWin = player.GamesWin;
+            recibirPlayer.Points = player.Points;
+            recibirPlayer.Username = player.Username;
+        }
+
+        public void recibirJUgadorVolver(InformacionUsuario.Player player)
+        {
+            recibirPlayer.IdPlayer = player.IdPlayer;
+            recibirPlayer.NamePlayer = player.NamePlayer;
+            recibirPlayer.PasswordPlayer = player.PasswordPlayer;
+            recibirPlayer.Email = player.Email;
+            recibirPlayer.GamesWin = player.GamesWin;
+            recibirPlayer.Points = player.Points;
+            recibirPlayer.Username = player.Username;
+        }
+
         private void BtnCerrarSesionClick(object sender, RoutedEventArgs e)
         {
             InicioDeSesion inicioDeSesion = new InicioDeSesion();
@@ -80,12 +102,9 @@ namespace AhorcadoCliente.Interfaces
         private void btnInformacion_Click(object sender, RoutedEventArgs e)
         {
             InformacionUsuario informacionUsuario = new InformacionUsuario();
+            informacionUsuario.recibirJUgador(recibirPlayer);
             informacionUsuario.Show();
             this.Close();
-        }
-        private void recibirJugador(Player player)
-        {
-            this.player = player;
         }
     }
 }

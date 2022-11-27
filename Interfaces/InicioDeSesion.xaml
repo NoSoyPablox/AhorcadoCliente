@@ -25,10 +25,10 @@
         <Rectangle HorizontalAlignment="Left" Height="355" Margin="72,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="276" Opacity="0.4" Fill="Black"/>
 
         <Label x:Name="lbInicioDeSesion" Content="{x:Static p:Resources.Login_Window}" HorizontalAlignment="Left" Margin="92,64,0,0" VerticalAlignment="Top" Foreground="White" FontSize="30" Width="240" HorizontalContentAlignment="Center"/>
-        <Label x:Name="lbUsuario" Content="{x:Static p:Resources.User}" HorizontalAlignment="Left" Margin="80,146,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label x:Name="lbUsuario" Content="{x:Static p:Resources.Email}" HorizontalAlignment="Left" Margin="80,146,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
         <Label x:Name="lbContraseña" Content="{x:Static p:Resources.Password}" HorizontalAlignment="Left" Margin="80,206,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
-        <TextBox x:Name="tbCorreo" HorizontalAlignment="Left" Height="24" Margin="212,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="pswContraseña" HorizontalAlignment="Left" Margin="212,214,0,0" VerticalAlignment="Top" Width="120" Height="24" KeyDown="pswContraseña_KeyDown"/>
+        <TextBox x:Name="tbCorreo" HorizontalAlignment="Left" Height="24" Margin="194,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <PasswordBox x:Name="pswContraseña" HorizontalAlignment="Left" Margin="195,0,0,0" VerticalAlignment="Center" Width="137" Height="24" KeyDown="pswContraseña_KeyDown"/>
         <Button x:Name="btnRegistrarme" Content="{x:Static p:Resources.Register_Button}" HorizontalAlignment="Left" Margin="567,184,0,0" VerticalAlignment="Top" Width="116" Height="26" Click="btnRegistrarmeClick"/>
         <Button x:Name="btnIniciarSesion" Content="{x:Static p:Resources.Login_Button}" HorizontalAlignment="Left" Margin="160,296,0,0" VerticalAlignment="Top" Width="104" Height="22" Click="BtnIniciarSesionClick"/>
         <Button x:Name="btnSalir" Content="{x:Static p:Resources.Exit}" HorizontalAlignment="Left" Margin="174,334,0,0" VerticalAlignment="Top" Width="76" Click="BtnSalirClick"/>

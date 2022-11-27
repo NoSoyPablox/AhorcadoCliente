@@ -19,7 +19,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label x:Name="lbElegirIdioma" Content="Elige el idioma de la partida" HorizontalAlignment="Left" Margin="284,35,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16"/>
-        <Button x:Name="btnEspanol" Content="{x:Static p:Resources.Spanish}" HorizontalAlignment="Left" Margin="160,179,0,0" VerticalAlignment="Top" Width="200" Height="70" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btnEspanol" Content="{x:Static p:Resources.Spanish}" HorizontalAlignment="Left" Margin="160,179,0,0" VerticalAlignment="Top" Width="200" Height="70" FontWeight="Bold" FontSize="16" Click="btnEspanol_Click"/>
         <Button x:Name="btnIngles" Content="{x:Static p:Resources.English}" HorizontalAlignment="Left" Margin="443,179,0,0" VerticalAlignment="Top" Width="200" Height="70" FontWeight="Bold" FontSize="16"/>
         <Button x:Name="btnVolver" Content="{x:Static p:Resources.Back}" HorizontalAlignment="Left" Margin="346,306,0,0" VerticalAlignment="Top" Width="109" Height="29" FontSize="14" Click="btnVolver_Click"/>
     </Grid>
