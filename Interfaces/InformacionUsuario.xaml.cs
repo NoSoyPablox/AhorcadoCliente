@@ -54,6 +54,7 @@ namespace AhorcadoCliente.Interfaces
             public int Points { get; set; }
             public int GamesWin { get; set; }
             public Nullable<int> IdAvatar { get; set; }
+            
         }
 
         public void recibirJUgador(PantallaPrincipal.Player player)

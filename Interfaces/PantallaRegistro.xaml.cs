@@ -48,34 +48,52 @@ namespace AhorcadoCliente.Interfaces
 
         private void btnRegistrarme_Click(object sender, RoutedEventArgs e)
         {
+            String AlertLogin = "Registro exitoso";
+            String AlertIncorrecto = "No se ha completado el registro de manera exitosa";
             int respuesta = 0;
             ServiceReference1.PlayerClient service = new ServiceReference1.PlayerClient();
             string nombre = tbNombre.Text;
             string usuarname = tbUsuario.Text;
             string email = tbEmail.Text;
             string password = pswContraseña.Password.ToString();
-            String AlertLogin = "Registro exitoso";
-            String AlertIncorrecto = "No se ha completado el registro de mner exitosa"; 
-            if (pswContraseña.Password.ToString() == pswRepetirContraseña.Password.ToString())
+            string passwordRepeat = pswRepetirContraseña.Password.ToString();
+            if (nombre != "" && usuarname != "" && email != "" && password != "" && passwordRepeat != "")
             {
-                respuesta = service.Register(nombre, email, password, usuarname, 0, 0);
-                if (respuesta != 0) {
-                    MessageBox.Show(AlertLogin);
-                    tbNombre.Clear();
-                    tbUsuario.Clear();
-                    tbEmail.Clear();
-                    pswContraseña.Clear();
-                    pswRepetirContraseña.Clear();
+                if (password == passwordRepeat)
+                {
+                    if (password.Length >= 8)
+                    {
+                        respuesta = service.Register(nombre, email, password, usuarname, 0, 0);
+                        if (respuesta != 0)
+                        {
+                            MessageBox.Show(Properties.Resources.RegisterSuccessful, Properties.Resources.RegisterSuccessfulTittle);
+                            tbNombre.Clear();
+                            tbUsuario.Clear();
+                            tbEmail.Clear();
+                            pswContraseña.Clear();
+                            pswRepetirContraseña.Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show(Properties.Resources.RegistrationError, Properties.Resources.RegistrationErrorTittle);
+                        }
+                    }
+                    else 
+                    {
+                        MessageBox.Show(Properties.Resources.LengthPassword, Properties.Resources.LengthPasswordTittle);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(AlertIncorrecto);
+                    MessageBox.Show(Properties.Resources.MatchPassword, Properties.Resources.MatchPasswordTittle);
                 }
             }
-            else
+            else 
             {
-                Console.WriteLine("No coincide man :C");
+                MessageBox.Show(Properties.Resources.Empty, Properties.Resources.EmptyFields);
             }
+            
+            
             
         }
 

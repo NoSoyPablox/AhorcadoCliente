@@ -33,9 +33,10 @@ namespace AhorcadoCliente.Interfaces
 
         private void btnEspanol_Click(object sender, RoutedEventArgs e)
         {
-            PartidaAdivinador partida = new PartidaAdivinador();
-            partida.Show();
+            SalaDeEsperaAnfitrion salaDeEsperaAnfitrion = new SalaDeEsperaAnfitrion();
+            salaDeEsperaAnfitrion.Show();
             this.Close();
+
         }
     }
 }

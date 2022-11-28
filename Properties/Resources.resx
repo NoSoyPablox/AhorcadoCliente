@@ -138,6 +138,12 @@
   <data name="Email" xml:space="preserve">
     <value>Correo</value>
   </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Campos vacíos, vuelva a intentarlo</value>
+  </data>
+  <data name="EmptyFields" xml:space="preserve">
+    <value>Campos vacíos</value>
+  </data>
   <data name="English" xml:space="preserve">
     <value>Inglés</value>
   </data>
@@ -178,6 +184,12 @@ Juega como invitado</value>
   <data name="LeaveGame" xml:space="preserve">
     <value>Abandonar</value>
   </data>
+  <data name="LengthPassword" xml:space="preserve">
+    <value>El tamaño de la contraseña debe ser mayor a 8 digitos, vuelve a intentarlo</value>
+  </data>
+  <data name="LengthPasswordTittle" xml:space="preserve">
+    <value>Tamaño de contraseña corto</value>
+  </data>
   <data name="Login_Button" xml:space="preserve">
     <value>Iniciar sesión</value>
   </data>
@@ -192,6 +204,12 @@ Juega como invitado</value>
   </data>
   <data name="Male" xml:space="preserve">
     <value>Hombre</value>
+  </data>
+  <data name="MatchPassword" xml:space="preserve">
+    <value>Las contraseñas no coinciden, vuelve a intentarlo</value>
+  </data>
+  <data name="MatchPasswordTittle" xml:space="preserve">
+    <value>Contraseñas no coinciden</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nombre</value>
@@ -211,11 +229,29 @@ Juega como invitado</value>
   <data name="PlayAsGuess" xml:space="preserve">
     <value>Jugar como invitado</value>
   </data>
+  <data name="RegisterSuccessful" xml:space="preserve">
+    <value>El registro se ha completado de manera exitosa</value>
+  </data>
+  <data name="RegisterSuccessfulTittle" xml:space="preserve">
+    <value>Registro Exitoso</value>
+  </data>
   <data name="Register_Button" xml:space="preserve">
     <value>Registrar</value>
   </data>
+  <data name="RegistrationError" xml:space="preserve">
+    <value>El registro no se ha completado de manera exitosa</value>
+  </data>
+  <data name="RegistrationErrorTittle" xml:space="preserve">
+    <value>Error de registro</value>
+  </data>
   <data name="RepeatPassword" xml:space="preserve">
     <value>Repetir contraseña</value>
+  </data>
+  <data name="RequeriedUsername" xml:space="preserve">
+    <value>Nombre de usuario requerido, por favor, introduzca uno</value>
+  </data>
+  <data name="RequeriedUsernameTittle" xml:space="preserve">
+    <value>Nombre de usuario requerido</value>
   </data>
   <data name="Required" xml:space="preserve">
     <value>* Requerido</value>
@@ -241,5 +277,11 @@ Crea una a continuación</value>
   </data>
   <data name="WaitingGameHost" xml:space="preserve">
     <value>Esperando al anfitrión...</value>
+  </data>
+  <data name="WrongField" xml:space="preserve">
+    <value>Correo y/o contraseña incorrectos</value>
+  </data>
+  <data name="WrongFieldTittle" xml:space="preserve">
+    <value>Campos Incorrectos</value>
   </data>
 </root>

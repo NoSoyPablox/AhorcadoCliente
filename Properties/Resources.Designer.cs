@@ -124,6 +124,24 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Campos vacíos, vuelva a intentarlo.
+        /// </summary>
+        public static string Empty {
+            get {
+                return ResourceManager.GetString("Empty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Campos vacíos.
+        /// </summary>
+        public static string EmptyFields {
+            get {
+                return ResourceManager.GetString("EmptyFields", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Inglés.
         /// </summary>
         public static string English {
@@ -242,6 +260,24 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a El tamaño de la contraseña debe ser mayor a 8 digitos, vuelve a intentarlo.
+        /// </summary>
+        public static string LengthPassword {
+            get {
+                return ResourceManager.GetString("LengthPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tamaño de contraseña corto.
+        /// </summary>
+        public static string LengthPasswordTittle {
+            get {
+                return ResourceManager.GetString("LengthPasswordTittle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Iniciar sesión.
         /// </summary>
         public static string Login_Button {
@@ -283,6 +319,24 @@ namespace AhorcadoCliente.Properties {
         public static string Male {
             get {
                 return ResourceManager.GetString("Male", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Las contraseñas no coinciden, vuelve a intentarlo.
+        /// </summary>
+        public static string MatchPassword {
+            get {
+                return ResourceManager.GetString("MatchPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseñas no coinciden.
+        /// </summary>
+        public static string MatchPasswordTittle {
+            get {
+                return ResourceManager.GetString("MatchPasswordTittle", resourceCulture);
             }
         }
         
@@ -350,11 +404,65 @@ namespace AhorcadoCliente.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a El registro se ha completado de manera exitosa.
+        /// </summary>
+        public static string RegisterSuccessful {
+            get {
+                return ResourceManager.GetString("RegisterSuccessful", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registro Exitoso.
+        /// </summary>
+        public static string RegisterSuccessfulTittle {
+            get {
+                return ResourceManager.GetString("RegisterSuccessfulTittle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El registro no se ha completado de manera exitosa.
+        /// </summary>
+        public static string RegistrationError {
+            get {
+                return ResourceManager.GetString("RegistrationError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error de registro.
+        /// </summary>
+        public static string RegistrationErrorTittle {
+            get {
+                return ResourceManager.GetString("RegistrationErrorTittle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Repetir contraseña.
         /// </summary>
         public static string RepeatPassword {
             get {
                 return ResourceManager.GetString("RepeatPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre de usuario requerido, por favor, introduzca uno.
+        /// </summary>
+        public static string RequeriedUsername {
+            get {
+                return ResourceManager.GetString("RequeriedUsername", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre de usuario requerido.
+        /// </summary>
+        public static string RequeriedUsernameTittle {
+            get {
+                return ResourceManager.GetString("RequeriedUsernameTittle", resourceCulture);
             }
         }
         
@@ -428,6 +536,24 @@ namespace AhorcadoCliente.Properties {
         public static string WaitingGameHost {
             get {
                 return ResourceManager.GetString("WaitingGameHost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Correo y/o contraseña incorrectos.
+        /// </summary>
+        public static string WrongField {
+            get {
+                return ResourceManager.GetString("WrongField", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Campos Incorrectos.
+        /// </summary>
+        public static string WrongFieldTittle {
+            get {
+                return ResourceManager.GetString("WrongFieldTittle", resourceCulture);
             }
         }
     }

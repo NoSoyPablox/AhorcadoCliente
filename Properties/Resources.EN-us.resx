@@ -138,6 +138,12 @@
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Empty fields, try again</value>
+  </data>
+  <data name="EmptyFields" xml:space="preserve">
+    <value>Empty Fields</value>
+  </data>
   <data name="English" xml:space="preserve">
     <value>English</value>
   </data>
@@ -178,6 +184,12 @@ Play as a guess below</value>
   <data name="LeaveGame" xml:space="preserve">
     <value>Leave game</value>
   </data>
+  <data name="LengthPassword" xml:space="preserve">
+    <value>The length of the password must be greater than 8 digits, try again</value>
+  </data>
+  <data name="LengthPasswordTittle" xml:space="preserve">
+    <value>short password size</value>
+  </data>
   <data name="Login_Button" xml:space="preserve">
     <value>Log in</value>
   </data>
@@ -195,6 +207,12 @@ Play as a guess below</value>
   </data>
   <data name="Male" xml:space="preserve">
     <value>Male</value>
+  </data>
+  <data name="MatchPassword" xml:space="preserve">
+    <value>The passwords do not match, try again</value>
+  </data>
+  <data name="MatchPasswordTittle" xml:space="preserve">
+    <value>passwords do not match</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
@@ -214,11 +232,29 @@ Play as a guess below</value>
   <data name="PlayAsGuess" xml:space="preserve">
     <value>Play as a guess</value>
   </data>
+  <data name="RegisterSuccessful" xml:space="preserve">
+    <value>Registration has been completed successfully</value>
+  </data>
+  <data name="RegisterSuccessfulTittle" xml:space="preserve">
+    <value>Register Successful</value>
+  </data>
   <data name="Register_Button" xml:space="preserve">
     <value>Register me</value>
   </data>
+  <data name="RegistrationError" xml:space="preserve">
+    <value>The error has not been completed successfully</value>
+  </data>
+  <data name="RegistrationErrorTittle" xml:space="preserve">
+    <value>Registration Error</value>
+  </data>
   <data name="RepeatPassword" xml:space="preserve">
     <value>Repeat password</value>
+  </data>
+  <data name="RequeriedUsername" xml:space="preserve">
+    <value>Requeried Username, please, enter one</value>
+  </data>
+  <data name="RequeriedUsernameTittle" xml:space="preserve">
+    <value>Requeried Username</value>
   </data>
   <data name="Required" xml:space="preserve">
     <value>* Required</value>
@@ -244,5 +280,11 @@ Sign up below</value>
   </data>
   <data name="WaitingGameHost" xml:space="preserve">
     <value>Waiting for game host...</value>
+  </data>
+  <data name="WrongField" xml:space="preserve">
+    <value>wrong email and/or password</value>
+  </data>
+  <data name="WrongFieldTittle" xml:space="preserve">
+    <value>Wrong Fields</value>
   </data>
 </root>

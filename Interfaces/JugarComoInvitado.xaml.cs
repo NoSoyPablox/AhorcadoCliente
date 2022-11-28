@@ -25,18 +25,12 @@ namespace AhorcadoCliente.Interfaces
             cbIdioma.Text = App.idioma;
         }
 
-        private class Player
+        public class Player
         {
-            public int IdPlayer { get; set; }
-            public string NamePlayer { get; set; }
-            public string Lastname { get; set; }
-            public string Email { get; set; }
-            public string PasswordPlayer { get; set; }
             public string Username { get; set; }
-            public int Points { get; set; }
-            public int GamesWin { get; set; }
-            public Nullable<int> IdAvatar { get; set; }
+            public bool invitado { get; set; }
         }
+
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
@@ -72,13 +66,14 @@ namespace AhorcadoCliente.Interfaces
                 PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
                 Player player = new Player();
                 player.Username = tbUsuario.Text;
-                //pantallaPrincipal.recibirJugador();
+                player.invitado = true;
+                pantallaPrincipal.recibirJUgadorInvitado(player);
                 pantallaPrincipal.Show();
                 this.Close();
             }
             else
             {
-
+                MessageBox.Show(Properties.Resources.RequeriedUsername, Properties.Resources.RequeriedUsernameTittle);
             }
         }
     }

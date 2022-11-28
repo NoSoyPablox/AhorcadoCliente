@@ -49,11 +49,12 @@ namespace AhorcadoCliente
         {
             ServiceReference1.PlayerClient service1 = new ServiceReference1.PlayerClient();
             String correo = tbCorreo.Text;
-            String password = "Unshowmas13";
-            String AlertLoginIncorrect = "Usuario o contraseña incorrecta";
+            String password = pswContraseña.Password.ToString();
             bool respuesta;
+            if (correo != "" && password != "")
+            {
                 respuesta = service1.Login(correo, password);
-                if (respuesta == true) 
+                if (respuesta == true)
                 {
                     Player playerRecibido = new Player();
                     playerRecibido.NamePlayer = service1.recuperarNombreJugador(correo, password);
@@ -68,9 +69,15 @@ namespace AhorcadoCliente
                     pantallaPrincipal.Show();
                     this.Close();
                 }
-                else {
-                    MessageBox.Show(AlertLoginIncorrect);
+                else
+                {
+                    MessageBox.Show(Properties.Resources.WrongField, Properties.Resources.WrongFieldTittle);
                 }
+            }
+            else 
+            {
+                MessageBox.Show(Properties.Resources.Empty, Properties.Resources.EmptyFields);
+            }
 
         }
 

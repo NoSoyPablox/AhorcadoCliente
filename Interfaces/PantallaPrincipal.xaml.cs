@@ -37,6 +37,7 @@ namespace AhorcadoCliente.Interfaces
             public int Points { get; set; }
             public int GamesWin { get; set; }
             public Nullable<int> IdAvatar { get; set; }
+            public bool invitado { get; set; }
         }
 
         public void recibirJUgador(InicioDeSesion.Player player) {
@@ -47,6 +48,7 @@ namespace AhorcadoCliente.Interfaces
             recibirPlayer.GamesWin = player.GamesWin;
             recibirPlayer.Points = player.Points;
             recibirPlayer.Username = player.Username;
+            recibirPlayer.invitado = false;
         }
 
         public void recibirJUgadorVolver(InformacionUsuario.Player player)
@@ -58,6 +60,13 @@ namespace AhorcadoCliente.Interfaces
             recibirPlayer.GamesWin = player.GamesWin;
             recibirPlayer.Points = player.Points;
             recibirPlayer.Username = player.Username;
+            recibirPlayer.invitado = false;
+        }
+
+        public void recibirJUgadorInvitado(JugarComoInvitado.Player player)
+        {
+            recibirPlayer.Username = player.Username;
+            recibirPlayer.invitado = player.invitado;
         }
 
         private void BtnCerrarSesionClick(object sender, RoutedEventArgs e)
@@ -101,10 +110,17 @@ namespace AhorcadoCliente.Interfaces
 
         private void btnInformacion_Click(object sender, RoutedEventArgs e)
         {
-            InformacionUsuario informacionUsuario = new InformacionUsuario();
-            informacionUsuario.recibirJUgador(recibirPlayer);
-            informacionUsuario.Show();
-            this.Close();
+            if (recibirPlayer.invitado == false)
+            {
+                InformacionUsuario informacionUsuario = new InformacionUsuario();
+                informacionUsuario.recibirJUgador(recibirPlayer);
+                informacionUsuario.Show();
+                this.Close();
+            }
+            else {
+                MessageBox.Show("Para usar esta funcionalidad es necesario registrarse");
+
+            }
         }
     }
 }
